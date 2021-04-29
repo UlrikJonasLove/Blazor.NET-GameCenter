@@ -1,0 +1,14 @@
+@page "/game/create"
+@inject NavigationManager navigationManager
+
+<h1>Create game</h1>
+
+<button class="btn btn-primary" @onclick="SaveGame">Save Game</button>
+
+@code {
+    private void SaveGame() 
+    {
+        Console.WriteLine(navigationManager.Uri);
+        navigationManager.NavigateTo("game");
+    }
+}

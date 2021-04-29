@@ -1,0 +1,46 @@
+@inject IJSRuntime js
+
+<div class="games-container">
+<GenericList List="Games">
+    <ElementTemplate Context="game">
+        <IndividualGame Game="game"
+                DeleteGame="DeleteGame"/>
+    </ElementTemplate>
+</GenericList>
+</div>
+
+<!--<Confirmation @ref="confirmation" onCancel="onCancel" onConfirm="onConfirm">
+    <p>Do you wish to Delete @gameToBeDeleted.Title?</p>
+</Confirmation> -->
+
+@code {
+    //Confirmation confirmation;
+    [Parameter] public List<Game> Games { get; set; }  
+   
+    //Game gameToBeDeleted;
+
+    private async Task DeleteGame(Game game) 
+    {
+       // gameToBeDeleted = game;
+        //confirmation.Show();
+        //await js.myFunction("custom");
+        var confirmed = await js.Confirm($"Are you sure you want to delete {game.Title}");
+        if(confirmed) 
+        {
+            Games.Remove(game);
+        }
+
+    }
+
+   /* void onConfirm() 
+    {
+        Games.Remove(gameToBeDeleted);
+        confirmation.Hide();
+        gameToBeDeleted = null;
+    }
+    void onCancel() 
+    {
+        confirmation.Hide();
+        gameToBeDeleted = null;
+    } */
+}

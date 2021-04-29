@@ -1,0 +1,15 @@
+@page "/game/{GameId:int}"
+@page "/game/{GameId:int}/{GameName}"
+
+<h1>Game Detail</h1>
+
+@code {
+    [Parameter] public int GameId { get; set; }
+    [Parameter] public string GameName { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"The Id of the game is {GameId}");
+        Console.WriteLine($"The name of the game is {GameName}");
+    }
+}

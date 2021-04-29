@@ -1,0 +1,16 @@
+﻿@page "/"
+@inject IRepository repository
+
+<div>
+    <h3>Game</h3>
+   <GamesList Games="games"/>
+</div>
+
+@code {
+    private List<Game> games;
+    protected override void OnInitialized()
+    {
+        //await Task.Delay(3000);
+        games = repository.GetGames();
+    } 
+}
