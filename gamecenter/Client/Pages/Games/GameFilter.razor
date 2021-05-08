@@ -1,0 +1,60 @@
+@page "/games/search"
+@inject IRepository repository
+
+<h3>Search for Games</h3>
+
+<div class="form-inline">
+    <label for="title" class="sr-only">Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Game Title" 
+        @bind-value="title" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e) => TitleKeyPress(e))"/>
+<div class="form-group mx-sm-3 mb-2">
+    <select class="form-control" @bind="selectedGenre">
+        <option value="0">Select a Genre</option> 
+    @foreach(var genre in Genres) 
+    {
+        <option value="@genre.Id">@genre.Name</option>
+    }
+    </select>
+
+    <button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="SearchForGames">Filter</button>
+    <button type="button" class="btn btn-danger mb-2" @onclick="Clear">Clear</button>
+</div>
+</div>
+
+<GamesList Games="Games"></GamesList>
+
+@code{
+    private List<Game> Games;
+    string title = "";
+    string selectedGenre = "0";
+   
+    private List<Genre> Genres = new List<Genre>() { new Genre() {Id = 1, Name = "Action"}, new Genre(){ Id = 2, Name = "Platform"}};
+    
+    protected override void OnInitialized()
+    {
+        Games = repository.GetGames();
+    }
+    
+    private void SearchForGames() 
+    {
+        Games = repository.GetGames().Where(x => x.Title.Contains(title)).ToList();
+        Console.WriteLine($"Title: {title}");
+        Console.WriteLine($"selectedGenre: {selectedGenre}");      
+    }
+
+    private void Clear() 
+    {
+        Games = repository.GetGames();
+        title = "";
+        selectedGenre = "0"; 
+    }
+
+    private void TitleKeyPress(KeyboardEventArgs e) 
+    {
+        if(e.Key == "Enter")
+        {
+            //Implement here
+            SearchForGames();
+        }
+    }
+}

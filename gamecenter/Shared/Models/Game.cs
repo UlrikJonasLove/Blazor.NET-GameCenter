@@ -1,13 +1,20 @@
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace gamecenter.Shared.Models
 {
     public class Game
     {
-        public int Id { get; set; } = 1;
+        public int Id { get; set; }
+        [Required]
         public string Title { get; set; }
-        public DateTime ReleaseDate { get; set; }
+        public string Summary { get; set; }
+        public string Trailer { get; set; }
+        [Required]
+        public DateTime? ReleaseDate { get; set; }
         public string Poster { get; set; }
+        public List<GamesGenres> GamesGenres { get ; set; } = new List<GamesGenres>();
         public string TitleBrief 
         {
             get 

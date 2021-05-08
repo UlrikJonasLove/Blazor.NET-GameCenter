@@ -100,6 +100,13 @@ using gamecenter.Client.Shared.Components;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 14 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using System.Timers;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/game/{GameId:int}")]
     [Microsoft.AspNetCore.Components.RouteAttribute("/game/{GameId:int}/{GameName}")]
     public partial class GameDetails : Microsoft.AspNetCore.Components.ComponentBase

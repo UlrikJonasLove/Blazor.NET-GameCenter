@@ -2,15 +2,27 @@
 @inject IRepository repository
 
 <div>
-    <h3>Game</h3>
+    <h3>Games</h3>
    <GamesList Games="games"/>
 </div>
 
+<Typeahead SearchMethod="SearchMethod"> 
+           <ResultTemplate>
+               @context
+           </ResultTemplate>
+           </Typeahead>
 @code {
     private List<Game> games;
     protected override void OnInitialized()
     {
         //await Task.Delay(3000);
         games = repository.GetGames();
-    } 
+    }
+
+    private async Task<IEnumerable<string>> SearchMethod(string searchText)
+    {
+        await Task.Delay(2000);
+        if(searchText == "test") { return Enumerable.Empty<string>(); }
+        return new List<string>() { "Ulrik", "Jonas" };
+    }
 }

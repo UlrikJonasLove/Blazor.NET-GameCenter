@@ -3,12 +3,20 @@
 
 <h1>Create game</h1>
 
-<button class="btn btn-primary" @onclick="SaveGame">Save Game</button>
+<GameForm Game="Game" OnValidSubmit="SaveGame" NotSelectedGenres="NotSelectedGenres"/>
 
 @code {
+    private Game Game = new Game();
+    private List<Genre> NotSelectedGenres = new List<Genre>()
+    {
+        new Genre() { Id = 1, Name = "Fantasy" },
+        new Genre() { Id = 2, Name = "Platform" },
+        new Genre() { Id = 3, Name = "Horror" }
+    };
+
     private void SaveGame() 
     {
-        Console.WriteLine(navigationManager.Uri);
-        navigationManager.NavigateTo("game");
+        Console.WriteLine("Test");
+        //navigationManager.NavigateTo("game");
     }
 }

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using gamecenter.Client.Helpers;
 
+
 namespace gamecenter.Client
 {
     public class Program

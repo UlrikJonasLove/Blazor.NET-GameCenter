@@ -2,6 +2,32 @@
 
 <h1>edit game</h1>
 
+@if(Game != null)
+{
+    <GameForm Game="Game" OnValidSubmit="Edit" NotSelectedGenres="NotSelectedGenres" SelectedGenre="SelectedGenres"/>
+}
+
 @code {
     [Parameter] public int GameId { get; set; }
+    private Game Game;
+
+    private List<Genre> NotSelectedGenres = new List<Genre>()
+    {
+        new Genre() { Id = 2, Name = "Platform" },
+        new Genre() { Id = 3, Name = "Horror" }
+    };
+    
+    private List<Genre> SelectedGenres = new List<Genre>()
+    {
+        new Genre() { Id = 1, Name = "Fantasy" }
+    };
+    protected override void OnInitialized()
+    {
+        Game = new Game() { Id = GameId, Title = "My Game"};
+    }
+
+    private void Edit() 
+    {
+        Console.WriteLine("Editing the game");
+    }
 }

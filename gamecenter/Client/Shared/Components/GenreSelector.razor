@@ -1,0 +1,35 @@
+<div class="multiple-selector">
+    <ul class="selectable-ul">
+        @foreach(var item in NoSelected)
+        {
+            <li @onclick="@(() => Select(item))">@item.Value</li>
+        }
+    </ul>
+   
+    <ul class="selectable-ul">
+        @foreach(var item in Selected)
+        {
+            <li @onclick="@(() => Deselect(item))">@item.Value</li>
+        }
+    </ul>
+</div>
+
+
+@code{ 
+    [Parameter]
+    public List<GenreSelectorModel> NoSelected { get; set; } = new List<GenreSelectorModel>();
+    [Parameter]
+    public List<GenreSelectorModel> Selected { get; set; } = new List<GenreSelectorModel>();
+
+    private void Select(GenreSelectorModel item)
+    {
+        NoSelected.Remove(item);
+        Selected.Add(item);
+    }
+
+    private void Deselect(GenreSelectorModel item)
+    {
+        Selected.Remove(item);
+        NoSelected.Add(item);
+    }  
+}
