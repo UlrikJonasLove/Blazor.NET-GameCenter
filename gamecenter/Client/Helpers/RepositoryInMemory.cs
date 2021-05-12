@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using gamecenter.Client.Helpers.Interface;
 using gamecenter.Shared.Models;
 
 namespace gamecenter.Client.Helpers

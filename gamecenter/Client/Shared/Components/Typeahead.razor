@@ -13,36 +13,44 @@
     </div>
     @if (IsSearching)
     {
-<div class="blazored-typeahead__results">
-    <div class="blazored-typeahead__result">
-        <span>Loading...</span>
+    <div class="blazored-typeahead__results">
+        <div class="blazored-typeahead__result">
+            <span>Loading...</span>
+        </div>
+    </div> 
+    }
+    else if (ShouldShowSuggestions())
+    {
+        <div class="blazored-typeahead__results">
+            @foreach (var item in Suggestions)
+    {
+
+    <div @key="item" class="blazored-typeahead__result"
+        tabindex="0" @onclick="@(() => SelectSuggestion(item))"
+                     @onmouseover="OnmouseoverSuggestion" @onmouseout="OnmouseoutSuggestion">
+        @ResultTemplate(item)
     </div>
-</div> }
-            else if (ShouldShowSuggestions())
-            {
-<div class="blazored-typeahead__results">
-    @foreach (var item in Suggestions)
+    }
+        </div> 
+    }
+    
+    else if (ShowNotFound())
     {
-<div @key="item" class="blazored-typeahead__result"
-     tabindex="0" @onclick="@(() => SelectSuggestion(item))"
-     @onmouseover="OnmouseoverSuggestion" @onmouseout="OnmouseoutSuggestion">
-    @ResultTemplate(item)
-</div>}
-</div> }
-            else if (ShowNotFound())
-            {
-<div class="blazored-typeahead__results">
-    @if (NotFoundTemplate != null)
-    {
-<div class="blazored-typeahead__notfound">
-    @NotFoundTemplate
-</div> }
-                else
-                {
-<div class="blazored-typeahead__notfound">
-    No Results Found
-</div>}
-</div>}
+        <div class="blazored-typeahead__results">
+            @if (NotFoundTemplate != null)
+             {
+                <div class="blazored-typeahead__notfound">
+                @NotFoundTemplate
+                </div> 
+             }
+             else
+             {
+                <div class="blazored-typeahead__notfound">
+                    No Results Found
+                </div>
+                }
+        </div>
+    }
 </div>
 
 @code { 

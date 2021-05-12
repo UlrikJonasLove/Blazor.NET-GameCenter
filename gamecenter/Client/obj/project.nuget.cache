@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g/MqQXhwTcjKWz42qi/0hDYln0g0O+dkD1WjB81nqci+J5m2ad5mU4Wt6OV7VRZe/Mzk7/z8/15pdsiKzfl01Q==",
+  "dgSpecHash": "gkEdfE1dAvj01u8cddRPXGoUhCMxE8GV40AA5gmI5lZxZG97/GT5YQ5Uikyn6kJBDXO+dZM02eddkr+3Oxtcqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\gamecenter.Client.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,7 @@
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.3\\microsoft.jsinterop.webassembly.5.0.3.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.3\\microsoft.netcore.app.runtime.browser-wasm.5.0.3.nupkg.sha512"
+    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.5\\microsoft.netcore.app.runtime.browser-wasm.5.0.5.nupkg.sha512"
   ],
   "logs": []
 }

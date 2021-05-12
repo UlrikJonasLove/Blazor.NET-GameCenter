@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace gamecenter.Shared.Models
 {
@@ -11,6 +13,9 @@ namespace gamecenter.Shared.Models
         public string Picture { get; set; }
         [Required]
         public DateTime? DateOfBirth { get; set; }
+        public List<GamesPeople> GamesPeople { get; set; } = new List<GamesPeople>();
+        [NotMapped]
+        public string RoleInGame { get; set; }
 
         public override bool Equals(object obj)
         {

@@ -15,6 +15,7 @@ namespace gamecenter.Shared.Models
         public DateTime? ReleaseDate { get; set; }
         public string Poster { get; set; }
         public List<GamesGenres> GamesGenres { get ; set; } = new List<GamesGenres>();
+        public List<GamesPeople> GamesPeople { get; set; } = new List<GamesPeople>();
         public string TitleBrief 
         {
             get 

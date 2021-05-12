@@ -91,20 +91,27 @@ using gamecenter.Client.Helpers;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Shared.Models;
+using gamecenter.Client.Helpers.Interface;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Shared.Components;
+using gamecenter.Shared.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Shared.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
 using System.Timers;
 
 #line default
@@ -122,6 +129,7 @@ using System.Timers;
 #line 8 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\CreateGame.razor"
        
     private Game Game = new Game();
+
     private List<Genre> NotSelectedGenres = new List<Genre>()
     {
         new Genre() { Id = 1, Name = "Fantasy" },
@@ -129,7 +137,7 @@ using System.Timers;
         new Genre() { Id = 3, Name = "Horror" }
     };
 
-    private void SaveGame() 
+     private void SaveGame() 
     {
         Console.WriteLine("Test");
         //navigationManager.NavigateTo("game");

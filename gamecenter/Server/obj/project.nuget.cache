@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "bN2xTrkW7dYHleiTgrsuZhY4GVQQymAV2qGld4N6tDp6BO5aP+hwh4TqST8K4wKbWHOqD286g4olgPWn2HWx1Q==",
+  "dgSpecHash": "a8Lbt+Q59+bdeF/XesD271ZL+N6jMfGOJ/PhAmmZb4ieM6i2vfNqQzB2772sndlD02YMJYTOq6RZc2jKcMbpEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\gamecenter.Server.csproj",
+  "projectFilePath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\gamecenter.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jonas\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.3\\microsoft.aspnetcore.authorization.5.0.3.nupkg.sha512",
@@ -86,7 +88,7 @@
     "C:\\Users\\jonas\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

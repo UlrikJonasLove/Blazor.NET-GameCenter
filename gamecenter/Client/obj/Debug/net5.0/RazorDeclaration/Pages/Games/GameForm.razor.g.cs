@@ -91,20 +91,27 @@ using gamecenter.Client.Helpers;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Shared.Models;
+using gamecenter.Client.Helpers.Interface;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 13 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Shared.Components;
+using gamecenter.Shared.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Shared.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
 using System.Timers;
 
 #line default
@@ -149,10 +156,37 @@ using System.Timers;
     private async Task<IEnumerable<Person>> SearchMethod(string searchText)
     {
         return new List<Person>() {
-            new Person() { Id = 1, Name = "Ulrik Rosberg", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/122105566_10157907096954482_2219965355707851212_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=izJw3E3wwrAAX-OSxZo&_nc_ht=scontent-cph2-1.xx&oh=a170461ed28b43cc4089e13b0f937136&oe=60BCBF5E"},
-            new Person() { Id = 2, Name = "Jonas Rosberg", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"},
-            new Person() { Id = 2, Name = "Erik Eriksson", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"}
+            new Person() { Id = 1, Name = "Ulrik Rosberg 1", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/122105566_10157907096954482_2219965355707851212_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=izJw3E3wwrAAX-OSxZo&_nc_ht=scontent-cph2-1.xx&oh=a170461ed28b43cc4089e13b0f937136&oe=60BCBF5E"},
+            new Person() { Id = 2, Name = "Ulrik Rosberg 2", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"},
+            new Person() { Id = 2, Name = "Ulrik Rosberg 3", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"}
         };
+    }
+
+    private async Task OnDataAnnotationsValidated()
+    {
+        Game.GamesGenres = Selected
+            .Select(x => new GamesGenres { GenresId = int.Parse(x.Key) }).ToList();
+
+        Game.GamesPeople = SelectedPerson
+            .Select(x => new GamesPeople { PersonId = x.Id, RoleOfGame = x.RoleInGame}).ToList();
+
+        
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 98 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+         if(!string.IsNullOrWhiteSpace(Game.Poster)) { imageURL = null; }
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 98 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+                                                                         
+
+        await OnValidSubmit.InvokeAsync(null);
     }
 
 #line default

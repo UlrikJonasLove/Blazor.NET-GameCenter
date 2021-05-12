@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\gamecenter.Server.csproj": {}
+    "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\gamecenter.Server.csproj": {}
   },
   "projects": {
     "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\gamecenter.Client.csproj": {
@@ -82,7 +82,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.3, 5.0.3]"
+              "version": "[5.0.5, 5.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -99,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\gamecenter.Server.csproj": {
+    "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\gamecenter.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\gamecenter.Server.csproj",
+        "projectUniqueName": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\gamecenter.Server.csproj",
         "projectName": "gamecenter.Server",
-        "projectPath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\gamecenter.Server.csproj",
+        "projectPath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\gamecenter.Server.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Server\\obj\\",
+        "outputPath": "C:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -149,6 +149,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
               "version": "[5.0.3, )"
@@ -182,7 +186,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -243,7 +247,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

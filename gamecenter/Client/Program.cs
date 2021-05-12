@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using gamecenter.Client.Helpers;
-
+using gamecenter.Client.Helpers.Interface;
 
 namespace gamecenter.Client
 {
