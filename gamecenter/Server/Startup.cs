@@ -8,6 +8,8 @@ using Microsoft.Extensions.Hosting;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using gamecenter.Server.Data;
+using gamecenter.Server.Helpers.Interface;
+using gamecenter.Server.Helpers;
 
 namespace gamecenter.Server
 {
@@ -28,9 +30,11 @@ namespace gamecenter.Server
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAutoMapper(typeof(Startup));
-
+            services.AddScoped<IFileStorageService, FileStorageService>();
             services.AddHttpContextAccessor();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options => 
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddRazorPages();
         }
 

@@ -53,13 +53,10 @@ namespace gamecenter.Server.Migrations
                     b.Property<int>("GameId")
                         .HasColumnType("int");
 
-                    b.Property<int>("GenresId")
+                    b.Property<int>("GenreId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("GenreId")
-                        .HasColumnType("int");
-
-                    b.HasKey("GameId", "GenresId");
+                    b.HasKey("GameId", "GenreId");
 
                     b.HasIndex("GenreId");
 
@@ -72,6 +69,9 @@ namespace gamecenter.Server.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("PersonId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Order")
                         .HasColumnType("int");
 
                     b.Property<string>("RoleOfGame")
@@ -135,7 +135,9 @@ namespace gamecenter.Server.Migrations
 
                     b.HasOne("gamecenter.Shared.Models.Genre", "Genre")
                         .WithMany("GamesGenres")
-                        .HasForeignKey("GenreId");
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Game");
 
@@ -145,13 +147,13 @@ namespace gamecenter.Server.Migrations
             modelBuilder.Entity("gamecenter.Shared.Models.GamesPeople", b =>
                 {
                     b.HasOne("gamecenter.Shared.Models.Game", "Game")
-                        .WithMany()
+                        .WithMany("GamesPeople")
                         .HasForeignKey("GameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("gamecenter.Shared.Models.Person", "Person")
-                        .WithMany()
+                        .WithMany("GamesPeople")
                         .HasForeignKey("PersonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -164,11 +166,18 @@ namespace gamecenter.Server.Migrations
             modelBuilder.Entity("gamecenter.Shared.Models.Game", b =>
                 {
                     b.Navigation("GamesGenres");
+
+                    b.Navigation("GamesPeople");
                 });
 
             modelBuilder.Entity("gamecenter.Shared.Models.Genre", b =>
                 {
                     b.Navigation("GamesGenres");
+                });
+
+            modelBuilder.Entity("gamecenter.Shared.Models.Person", b =>
+                {
+                    b.Navigation("GamesPeople");
                 });
 #pragma warning restore 612, 618
         }

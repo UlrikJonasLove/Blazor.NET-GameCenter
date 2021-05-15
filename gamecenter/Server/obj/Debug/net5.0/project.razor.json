@@ -3927,1531 +3927,6 @@
         }
       },
       {
-        "HashCode": 921082265,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Typeahead"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TItem",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.Typeahead<TItem> component.",
-            "Metadata": {
-              "Common.PropertyName": "TItem",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Placeholder",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Placeholder"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MinimumLength",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "MinimumLength"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Debounce",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Debounce"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SearchMethod",
-            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TItem>>>",
-            "Metadata": {
-              "Common.PropertyName": "SearchMethod",
-              "Components.DelegateSignature": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ResultTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ResultTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NotFoundTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "NotFoundTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
-          "Components.GenericTyped": "True"
-        }
-      },
-      {
-        "HashCode": -426263452,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.Typeahead"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TItem",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.Typeahead<TItem> component.",
-            "Metadata": {
-              "Common.PropertyName": "TItem",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Placeholder",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Placeholder"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MinimumLength",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "MinimumLength"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Debounce",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "Debounce"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SearchMethod",
-            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TItem>>>",
-            "Metadata": {
-              "Common.PropertyName": "SearchMethod",
-              "Components.DelegateSignature": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ResultTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ResultTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NotFoundTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "NotFoundTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
-          "Components.GenericTyped": "True",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1912548450,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ResultTemplate",
-            "ParentTag": "Typeahead"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ResultTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -93723891,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ResultTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.Typeahead"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ResultTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -998285979,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NotFoundTemplate",
-            "ParentTag": "Typeahead"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 422168805,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NotFoundTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.Typeahead"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1869843021,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GamesList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GamesList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Games",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Game>",
-            "Metadata": {
-              "Common.PropertyName": "Games"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GamesList"
-        }
-      },
-      {
-        "HashCode": 12223181,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GamesList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.GamesList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Games",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Game>",
-            "Metadata": {
-              "Common.PropertyName": "Games"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GamesList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1188178277,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GenericList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TItem",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.GenericList<TItem> component.",
-            "Metadata": {
-              "Common.PropertyName": "TItem",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NullTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "NullTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "EmptyTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "EmptyTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ElementTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ElementTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "List",
-            "TypeName": "System.Collections.Generic.List<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "List",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>",
-          "Components.GenericTyped": "True"
-        }
-      },
-      {
-        "HashCode": -2133959694,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.GenericList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TItem",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.GenericList<TItem> component.",
-            "Metadata": {
-              "Common.PropertyName": "TItem",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NullTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "NullTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "EmptyTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Metadata": {
-              "Common.PropertyName": "EmptyTemplate",
-              "Components.ChildContent": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ElementTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "ElementTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "List",
-            "TypeName": "System.Collections.Generic.List<TItem>",
-            "Metadata": {
-              "Common.PropertyName": "List",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>",
-          "Components.GenericTyped": "True",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 554114519,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NullTemplate",
-            "ParentTag": "GenericList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1614258347,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NullTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1052125909,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EmptyTemplate",
-            "ParentTag": "GenericList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1456725863,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EmptyTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1098333043,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ElementTemplate",
-            "ParentTag": "GenericList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ElementTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 2027734998,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ElementTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'ElementTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1286959214,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GenreSelector",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GenreSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "NoSelected",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
-            "Metadata": {
-              "Common.PropertyName": "NoSelected"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Selected",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
-            "Metadata": {
-              "Common.PropertyName": "Selected"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenreSelector"
-        }
-      },
-      {
-        "HashCode": 1442864609,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.GenreSelector",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.GenreSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "NoSelected",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
-            "Metadata": {
-              "Common.PropertyName": "NoSelected"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Selected",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
-            "Metadata": {
-              "Common.PropertyName": "Selected"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.GenreSelector",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 682429078,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.IndividualGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "IndividualGame"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "gamecenter.Shared.Models.Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DeleteGame",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<gamecenter.Shared.Models.Game>",
-            "Metadata": {
-              "Common.PropertyName": "DeleteGame",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.IndividualGame"
-        }
-      },
-      {
-        "HashCode": 755016265,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.IndividualGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.IndividualGame"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "gamecenter.Shared.Models.Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DeleteGame",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<gamecenter.Shared.Models.Game>",
-            "Metadata": {
-              "Common.PropertyName": "DeleteGame",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.IndividualGame",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -389474373,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Input"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TValue",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
-            "Metadata": {
-              "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "For",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
-            "Metadata": {
-              "Common.PropertyName": "For",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
-          "Components.GenericTyped": "True"
-        }
-      },
-      {
-        "HashCode": -630227766,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.Input"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TValue",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
-            "Metadata": {
-              "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "For",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
-            "Metadata": {
-              "Common.PropertyName": "For",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
-          "Components.GenericTyped": "True",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1602075283,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.InputImg",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "InputImg"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSelectedImage",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnSelectedImage",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ImageURL",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ImageURL"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.InputImg"
-        }
-      },
-      {
-        "HashCode": -899038567,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.InputImg",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.InputImg"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnSelectedImage",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Metadata": {
-              "Common.PropertyName": "OnSelectedImage",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ImageURL",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "ImageURL"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.InputImg",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -102040395,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "T",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter T for the gamecenter.Client.Shared.Components.TypeaheadSelector<T> component.",
-            "Metadata": {
-              "Common.PropertyName": "T",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedElements",
-            "TypeName": "System.Collections.Generic.List<T>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedElements",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SearchMethod",
-            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>",
-            "Metadata": {
-              "Common.PropertyName": "SearchMethod",
-              "Components.DelegateSignature": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MyResultTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
-            "Metadata": {
-              "Common.PropertyName": "MyResultTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MyListTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
-            "Metadata": {
-              "Common.PropertyName": "MyListTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
-          "Components.GenericTyped": "True"
-        }
-      },
-      {
-        "HashCode": 1787486101,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "T",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter T for the gamecenter.Client.Shared.Components.TypeaheadSelector<T> component.",
-            "Metadata": {
-              "Common.PropertyName": "T",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedElements",
-            "TypeName": "System.Collections.Generic.List<T>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedElements",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SearchMethod",
-            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>",
-            "Metadata": {
-              "Common.PropertyName": "SearchMethod",
-              "Components.DelegateSignature": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MyResultTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
-            "Metadata": {
-              "Common.PropertyName": "MyResultTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "MyListTemplate",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
-            "Metadata": {
-              "Common.PropertyName": "MyListTemplate",
-              "Components.ChildContent": "True",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for all child content expressions.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
-          "Components.GenericTyped": "True",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 400163419,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyResultTemplate",
-            "ParentTag": "TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'MyResultTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1242777366,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyResultTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'MyResultTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1134546080,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyListTemplate",
-            "ParentTag": "TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'MyListTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 701140278,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyListTemplate",
-            "ParentTag": "gamecenter.Client.Shared.Components.TypeaheadSelector"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.ChildContent",
-            "Name": "Context",
-            "TypeName": "System.String",
-            "Documentation": "Specifies the parameter name for the 'MyListTemplate' child content expression.",
-            "Metadata": {
-              "Components.ChildContentParameterName": "True",
-              "Common.PropertyName": "Context"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 682886926,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.SurveyPrompt",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 2089711365,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.SurveyPrompt",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1068410560,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.MainLayout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": 1980995479,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.MainLayout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 141478373,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.MainLayout.Body",
-        "AssemblyName": "gamecenter.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 356376893,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.MainLayout.Body",
-        "AssemblyName": "gamecenter.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "gamecenter.Client.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1506779332,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.NavMenu",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 809237294,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.NavMenu",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -813998827,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.App",
@@ -6234,6 +4709,1742 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1869843021,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GamesList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GamesList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Games",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Game>",
+            "Metadata": {
+              "Common.PropertyName": "Games"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GamesList"
+        }
+      },
+      {
+        "HashCode": 12223181,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GamesList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.GamesList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Games",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Game>",
+            "Metadata": {
+              "Common.PropertyName": "Games"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GamesList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 671378326,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GenericList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TItem",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.GenericList<TItem> component.",
+            "Metadata": {
+              "Common.PropertyName": "TItem",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NullTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "NullTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "EmptyTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "EmptyTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ElementTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ElementTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WholeListTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "WholeListTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "List",
+            "TypeName": "System.Collections.Generic.List<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "List",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>",
+          "Components.GenericTyped": "True"
+        }
+      },
+      {
+        "HashCode": 1018528487,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.GenericList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TItem",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.GenericList<TItem> component.",
+            "Metadata": {
+              "Common.PropertyName": "TItem",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NullTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "NullTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "EmptyTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "EmptyTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ElementTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ElementTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "WholeListTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "WholeListTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "List",
+            "TypeName": "System.Collections.Generic.List<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "List",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>",
+          "Components.GenericTyped": "True",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 554114519,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NullTemplate",
+            "ParentTag": "GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1614258347,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NullTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.NullTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1052125909,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EmptyTemplate",
+            "ParentTag": "GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1456725863,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EmptyTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.EmptyTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1098333043,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ElementTemplate",
+            "ParentTag": "GenericList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'ElementTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 2027734998,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ElementTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'ElementTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.ElementTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -541002386,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.WholeListTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WholeListTemplate",
+            "ParentTag": "GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.WholeListTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 916889540,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.GenericList<TItem>.WholeListTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "WholeListTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.GenericList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenericList<TItem>.WholeListTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1286959214,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GenreSelector",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GenreSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NoSelected",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
+            "Metadata": {
+              "Common.PropertyName": "NoSelected"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Selected",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
+            "Metadata": {
+              "Common.PropertyName": "Selected"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenreSelector"
+        }
+      },
+      {
+        "HashCode": 1442864609,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.GenreSelector",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.GenreSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "NoSelected",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
+            "Metadata": {
+              "Common.PropertyName": "NoSelected"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Selected",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Client.Helpers.GenreSelectorModel>",
+            "Metadata": {
+              "Common.PropertyName": "Selected"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.GenreSelector",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 682429078,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.IndividualGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "IndividualGame"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "gamecenter.Shared.Models.Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DeleteGame",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<gamecenter.Shared.Models.Game>",
+            "Metadata": {
+              "Common.PropertyName": "DeleteGame",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.IndividualGame"
+        }
+      },
+      {
+        "HashCode": 755016265,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.IndividualGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.IndividualGame"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "gamecenter.Shared.Models.Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DeleteGame",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<gamecenter.Shared.Models.Game>",
+            "Metadata": {
+              "Common.PropertyName": "DeleteGame",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.IndividualGame",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -389474373,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Input"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TValue",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
+            "Metadata": {
+              "Common.PropertyName": "TValue",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "For",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
+            "Metadata": {
+              "Common.PropertyName": "For",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
+          "Components.GenericTyped": "True"
+        }
+      },
+      {
+        "HashCode": -630227766,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.Input"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TValue",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
+            "Metadata": {
+              "Common.PropertyName": "TValue",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "For",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
+            "Metadata": {
+              "Common.PropertyName": "For",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
+          "Components.GenericTyped": "True",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1602075283,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.InputImg",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "InputImg"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSelectedImage",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnSelectedImage",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ImageURL",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ImageURL"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.InputImg"
+        }
+      },
+      {
+        "HashCode": -899038567,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.InputImg",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.InputImg"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnSelectedImage",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Metadata": {
+              "Common.PropertyName": "OnSelectedImage",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ImageURL",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ImageURL"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.InputImg",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -191902693,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.MarkdownInput",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MarkdownInput"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MarkdownContent",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "MarkdownContent"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.MarkdownInput"
+        }
+      },
+      {
+        "HashCode": 1246946399,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.MarkdownInput",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.MarkdownInput"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "MarkdownContent",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "MarkdownContent"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.MarkdownInput",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 513795313,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Page",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Page"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentPage",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "CurrentPage"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AmountOfPages",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "AmountOfPages"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Radius",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Radius"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedPage",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedPage",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Page"
+        }
+      },
+      {
+        "HashCode": 1639414401,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Page",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.Page"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentPage",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "CurrentPage"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AmountOfPages",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "AmountOfPages"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Radius",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Radius"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedPage",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedPage",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Page",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 921082265,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Typeahead"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TItem",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.Typeahead<TItem> component.",
+            "Metadata": {
+              "Common.PropertyName": "TItem",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Placeholder",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Placeholder"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MinimumLength",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MinimumLength"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Debounce",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Debounce"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchMethod",
+            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TItem>>>",
+            "Metadata": {
+              "Common.PropertyName": "SearchMethod",
+              "Components.DelegateSignature": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ResultTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ResultTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NotFoundTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "NotFoundTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
+          "Components.GenericTyped": "True"
+        }
+      },
+      {
+        "HashCode": -426263452,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.Typeahead"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TItem",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TItem for the gamecenter.Client.Shared.Components.Typeahead<TItem> component.",
+            "Metadata": {
+              "Common.PropertyName": "TItem",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Placeholder",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Placeholder"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MinimumLength",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "MinimumLength"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Debounce",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "Debounce"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchMethod",
+            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TItem>>>",
+            "Metadata": {
+              "Common.PropertyName": "SearchMethod",
+              "Components.DelegateSignature": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ResultTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ResultTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NotFoundTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "NotFoundTemplate",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<TItem>",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>",
+          "Components.GenericTyped": "True",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1912548450,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ResultTemplate",
+            "ParentTag": "Typeahead"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'ResultTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -93723891,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ResultTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.Typeahead"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'ResultTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.ResultTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -998285979,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NotFoundTemplate",
+            "ParentTag": "Typeahead"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 422168805,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NotFoundTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.Typeahead"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Typeahead<TItem>.NotFoundTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -102040395,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "T",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter T for the gamecenter.Client.Shared.Components.TypeaheadSelector<T> component.",
+            "Metadata": {
+              "Common.PropertyName": "T",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedElements",
+            "TypeName": "System.Collections.Generic.List<T>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedElements",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchMethod",
+            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>",
+            "Metadata": {
+              "Common.PropertyName": "SearchMethod",
+              "Components.DelegateSignature": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MyResultTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
+            "Metadata": {
+              "Common.PropertyName": "MyResultTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MyListTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
+            "Metadata": {
+              "Common.PropertyName": "MyListTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
+          "Components.GenericTyped": "True"
+        }
+      },
+      {
+        "HashCode": 1787486101,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "T",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter T for the gamecenter.Client.Shared.Components.TypeaheadSelector<T> component.",
+            "Metadata": {
+              "Common.PropertyName": "T",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedElements",
+            "TypeName": "System.Collections.Generic.List<T>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedElements",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SearchMethod",
+            "TypeName": "System.Func<System.String, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>>",
+            "Metadata": {
+              "Common.PropertyName": "SearchMethod",
+              "Components.DelegateSignature": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MyResultTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
+            "Metadata": {
+              "Common.PropertyName": "MyResultTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "MyListTemplate",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment<T>",
+            "Metadata": {
+              "Common.PropertyName": "MyListTemplate",
+              "Components.ChildContent": "True",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for all child content expressions.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>",
+          "Components.GenericTyped": "True",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 400163419,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyResultTemplate",
+            "ParentTag": "TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'MyResultTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1242777366,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyResultTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'MyResultTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyResultTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1134546080,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyListTemplate",
+            "ParentTag": "TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'MyListTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 701140278,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyListTemplate",
+            "ParentTag": "gamecenter.Client.Shared.Components.TypeaheadSelector"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.ChildContent",
+            "Name": "Context",
+            "TypeName": "System.String",
+            "Documentation": "Specifies the parameter name for the 'MyListTemplate' child content expression.",
+            "Metadata": {
+              "Components.ChildContentParameterName": "True",
+              "Common.PropertyName": "Context"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.TypeaheadSelector<T>.MyListTemplate",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 682886926,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.SurveyPrompt",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 2089711365,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.SurveyPrompt",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1068410560,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.MainLayout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 1980995479,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.MainLayout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 141478373,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 356376893,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "gamecenter.Client.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1506779332,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.NavMenu",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 809237294,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.NavMenu",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

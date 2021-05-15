@@ -11,8 +11,10 @@ namespace gamecenter.Server.Helpers
     {
         public AutoMapperProfile()
         {
-            CreateMap<Person, Person>();
-            CreateMap<Game, Game>();
+            CreateMap<Person, Person>()
+                .ForMember(x => x.Picture, option => option.Ignore()); 
+            CreateMap<Game, Game>()
+                .ForMember(x => x.Poster, option => option.Ignore());
         }
     }
 }

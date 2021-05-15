@@ -13,7 +13,7 @@ namespace gamecenter.Server.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GamesGenres>().HasKey(x => new { x.GameId, x.GenresId});
+            modelBuilder.Entity<GamesGenres>().HasKey(x => new { x.GameId, x.GenreId});
             modelBuilder.Entity<GamesPeople>().HasKey(x => new { x.GameId, x.PersonId});
 
             base.OnModelCreating(modelBuilder);

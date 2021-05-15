@@ -38,7 +38,10 @@ namespace gamecenter.Server.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Genre>> Get(int id)
         {
-            return await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
+            var genre = await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
+            if(genre == null) { return NotFound(); }
+            return genre;
+            
         }
 
         [HttpPut]
@@ -46,7 +49,7 @@ namespace gamecenter.Server.Controllers
         {
             context.Attach(genre).State = EntityState.Modified;
             await context.SaveChangesAsync();
-            return Ok();
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
