@@ -1,4 +1,6 @@
 @page "/genres"
+@inject IGenreRepository genreRepository
+@attribute [Authorize]
 
 <h1>genres</h1>
 
@@ -7,7 +9,10 @@
         <a href="genre/create">New genre</a>
     </button>
 </div>
-        <table class = "table table-striped">
+
+<GenericList List="Genres">
+    <WholeListTemplate>
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th></th>
@@ -15,19 +20,39 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                        <td>
-                            <a class = "btn btn-success">Edit</a>
-                            <button class = "btn btn-danger">Delete</button>
-                        </td>
-                        <td>En kategori</td>
-                    </tr>
+                @foreach (var item in Genres)
+                {
                     <tr>
                         <td>
-                            <a class = "btn btn-success">Edit</a>
-                            <button class = "btn btn-danger">Delete</button>
+                            <a href="/genre/edit/@item.Id" class="btn btn-success">Edit</a>
+                            <button @onclick="@(() => DeleteGenres(item.Id))" class="btn btn-danger">Delete</button>
                         </td>
-                        <td>En annan kategori</td>
+                        <td>@item.Name</td>
                     </tr>
+                }
             </tbody>
         </table>
+    </WholeListTemplate>
+</GenericList>
+
+@code{
+    List<Genre> Genres;
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Genres = await genreRepository.GetGenres();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+
+    private async Task DeleteGenres(int Id)
+    {
+        await genreRepository.DeleteGenre(Id);
+        Genres = await genreRepository.GetGenres();
+    }
+}
+

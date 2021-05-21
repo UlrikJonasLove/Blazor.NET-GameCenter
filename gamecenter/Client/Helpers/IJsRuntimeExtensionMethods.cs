@@ -10,10 +10,5 @@ namespace gamecenter.Client.Helpers
             await js.InvokeVoidAsync("console.log", "example");
             return await js.InvokeAsync<bool>("confirm", msg);
         }
-
-        public static async ValueTask myFunction(this IJSRuntime js, string msg)
-        {
-            await js.InvokeVoidAsync("myFunction", msg);
-        }
     }
 }

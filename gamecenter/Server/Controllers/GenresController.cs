@@ -1,5 +1,7 @@
 ﻿using gamecenter.Server.Data;
 using gamecenter.Shared.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +14,7 @@ namespace gamecenter.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class GenresController : ControllerBase
     {
         private readonly AppDbContext context;
@@ -24,43 +27,78 @@ namespace gamecenter.Server.Controllers
         [HttpPost]
         public async Task<ActionResult> Post(Genre genre)
         {
-            context.Add(genre);
-            await context.SaveChangesAsync();
-            return Ok();
+            try
+            {
+                context.Add(genre);
+                await context.SaveChangesAsync();
+                return Ok();
+            }
+            catch(Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
+            } 
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Genre>>> Get()
         {
-            return await context.Genres.ToListAsync();
+            try
+            {
+                return await context.Genres.ToListAsync();
+            }
+            catch(Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
+            }  
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Genre>> Get(int id)
         {
-            var genre = await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
-            if(genre == null) { return NotFound(); }
-            return genre;
-            
+            try
+            {
+                var genre = await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
+                if(genre == null) { return NotFound(); }
+                return genre;
+            }
+            catch(Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
+            }  
         }
 
         [HttpPut]
         public async Task<ActionResult> Put(Genre genre)
         {
-            context.Attach(genre).State = EntityState.Modified;
-            await context.SaveChangesAsync();
-            return NoContent();
+            try
+            {
+                context.Attach(genre).State = EntityState.Modified;
+                await context.SaveChangesAsync();
+                return NoContent();
+            }
+            catch(Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
+            }  
         }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            var genre = await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
-            if(genre == null) { return NotFound(); }
+            try
+            {
+                var genre = await context.Genres.FirstOrDefaultAsync(x => x.Id == id);
+                if(genre == null) { return NotFound(); }
 
-            context.Remove(genre);
-            await context.SaveChangesAsync();
-            return NoContent();
+                context.Remove(genre);
+                await context.SaveChangesAsync();
+                return NoContent();
+            }
+            catch(Exception)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
+            }    
         }
     }
 }

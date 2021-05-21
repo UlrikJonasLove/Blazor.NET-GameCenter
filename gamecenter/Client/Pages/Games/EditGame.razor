@@ -1,33 +1,33 @@
 @page "/game/edit/{GameId:int}"
+@inject IGameRepository gameRepository
+@inject NavigationManager navigationManager
+@attribute [Authorize]
 
 <h1>edit game</h1>
 
 @if(Game != null)
 {
-    <GameForm Game="Game" OnValidSubmit="Edit" NotSelectedGenres="NotSelectedGenres" SelectedGenre="SelectedGenres"/>
+    <GameForm Game="Game" OnValidSubmit="Edit" NotSelectedGenres="NotSelectedGenres" SelectedGenre="SelectedGenres" SelectedPerson="SelectedPeople"/>
 }
 
 @code {
     [Parameter] public int GameId { get; set; }
     private Game Game;
-
-    private List<Genre> NotSelectedGenres = new List<Genre>()
+    private List<Person> SelectedPeople;
+    private List<Genre> NotSelectedGenres;
+    private List<Genre> SelectedGenres;
+    protected async override Task OnInitializedAsync()
     {
-        new Genre() { Id = 2, Name = "Platform" },
-        new Genre() { Id = 3, Name = "Horror" }
-    };
-    
-    private List<Genre> SelectedGenres = new List<Genre>()
-    {
-        new Genre() { Id = 1, Name = "Fantasy" }
-    };
-    protected override void OnInitialized()
-    {
-        Game = new Game() { Id = GameId, Title = "My Game"};
+        var model = await gameRepository.GetGamesForUpdate(GameId);
+        Game = model.Game;
+        SelectedPeople = model.People;
+        SelectedGenres = model.SelectedGenres;
+        NotSelectedGenres = model.NotSelectedGenres;
     }
 
-    private void Edit() 
+    private async Task Edit() 
     {
-        Console.WriteLine("Editing the game");
+        await gameRepository.UpdateGame(Game);
+        navigationManager.NavigateTo($"game/{GameId}/{Game.Title.Replace(" ", "-")}");
     }
 }

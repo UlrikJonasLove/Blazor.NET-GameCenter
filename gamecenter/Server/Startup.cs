@@ -6,10 +6,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using gamecenter.Server.Data;
 using gamecenter.Server.Helpers.Interface;
 using gamecenter.Server.Helpers;
+using Microsoft.AspNetCore.Identity;
+using System.Text;
+using System;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace gamecenter.Server
 {
@@ -28,6 +33,21 @@ namespace gamecenter.Server
         {
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(Configuration["jwt:key"])),
+                    ClockSkew = TimeSpan.Zero
+                });
 
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IFileStorageService, FileStorageService>();
@@ -35,6 +55,7 @@ namespace gamecenter.Server
             services.AddControllersWithViews()
                 .AddNewtonsoftJson(options => 
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddAuthorization();
             services.AddRazorPages();
         }
 
@@ -58,7 +79,8 @@ namespace gamecenter.Server
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();

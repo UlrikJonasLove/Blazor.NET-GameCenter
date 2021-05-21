@@ -28,91 +28,126 @@ using System.Net.Http.Json;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Forms;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Routing;
+using System.Timers;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.Web.Virtualization;
+using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 7 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.AspNetCore.Components.WebAssembly.Http;
+using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 8 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client;
+using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Shared;
+using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 11 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Helpers;
+using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Helpers.Interface;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 13 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Shared.Models;
+using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 14 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using gamecenter.Client.Shared.Components;
+using gamecenter.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 15 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
-using System.Timers;
+using gamecenter.Client.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Helpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Helpers.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 18 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Shared.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 19 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Shared.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Repository;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Client.Repository.Interface;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 22 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\_Imports.razor"
+using gamecenter.Shared.DTOs;
 
 #line default
 #line hidden
@@ -125,7 +160,7 @@ using System.Timers;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 56 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
        
     [Parameter] public Game Game { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
@@ -155,17 +190,13 @@ using System.Timers;
 
     private async Task<IEnumerable<Person>> SearchMethod(string searchText)
     {
-        return new List<Person>() {
-            new Person() { Id = 1, Name = "Ulrik Rosberg 1", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/122105566_10157907096954482_2219965355707851212_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=izJw3E3wwrAAX-OSxZo&_nc_ht=scontent-cph2-1.xx&oh=a170461ed28b43cc4089e13b0f937136&oe=60BCBF5E"},
-            new Person() { Id = 2, Name = "Ulrik Rosberg 2", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"},
-            new Person() { Id = 2, Name = "Ulrik Rosberg 3", Picture="https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/95764355_10157452994844482_8340900306434916352_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=174925&_nc_ohc=fBrNREPrORsAX8GKlh5&_nc_ht=scontent-cph2-1.xx&oh=ca3a77cee1f44004e0bf63d4df9f138f&oe=60B962AE"}
-        };
+        return await personRepository.GetPeopleByName(searchText);
     }
 
     private async Task OnDataAnnotationsValidated()
     {
         Game.GamesGenres = Selected
-            .Select(x => new GamesGenres { GenresId = int.Parse(x.Key) }).ToList();
+            .Select(x => new GamesGenres { GenreId = int.Parse(x.Key) }).ToList();
 
         Game.GamesPeople = SelectedPerson
             .Select(x => new GamesPeople { PersonId = x.Id, RoleOfGame = x.RoleInGame}).ToList();
@@ -176,14 +207,14 @@ using System.Timers;
 #line hidden
 #nullable disable
 #nullable restore
-#line 98 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 96 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
          if(!string.IsNullOrWhiteSpace(Game.Poster)) { imageURL = null; }
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 98 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 96 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
                                                                          
 
         await OnValidSubmit.InvokeAsync(null);
@@ -192,6 +223,7 @@ using System.Timers;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPersonRepository personRepository { get; set; }
     }
 }
 #pragma warning restore 1591

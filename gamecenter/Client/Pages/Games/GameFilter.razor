@@ -1,14 +1,16 @@
 @page "/games/search"
-@inject IRepository repository
+@inject IGameRepository gameRepository
+@inject IGenreRepository genreRepository
 
 <h3>Search for Games</h3>
 
+<EditForm Model="gameFilterDto">
 <div class="form-inline">
     <label for="title" class="sr-only">Title</label>
     <input type="text" class="form-control" id="title" placeholder="Game Title" 
-        @bind-value="title" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e) => TitleKeyPress(e))"/>
+        @bind-value="gameFilterDto.Title" @bind-value:event="oninput" @onkeypress="@((KeyboardEventArgs e) => TitleKeyPress(e))"/>
 <div class="form-group mx-sm-3 mb-2">
-    <select class="form-control" @bind="selectedGenre">
+    <select class="form-control" @bind="gameFilterDto.GenreId">
         <option value="0">Select a Genre</option> 
     @foreach(var genre in Genres) 
     {
@@ -20,41 +22,55 @@
     <button type="button" class="btn btn-danger mb-2" @onclick="Clear">Clear</button>
 </div>
 </div>
-
+</EditForm>
 <GamesList Games="Games"></GamesList>
+
+<Page CurrentPage="gameFilterDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
 
 @code{
     private List<Game> Games;
-    string title = "";
-    string selectedGenre = "0";
-   
-    private List<Genre> Genres = new List<Genre>() { new Genre() {Id = 1, Name = "Action"}, new Genre(){ Id = 2, Name = "Platform"}};
+    private GameFilterDTO gameFilterDto = new GameFilterDTO();
+    private int amountOfPages;
+    private List<Genre> Genres = new List<Genre>();
     
-    protected override void OnInitialized()
+    protected async override Task OnInitializedAsync()
     {
-        Games = repository.GetGames();
-    }
-    
-    private void SearchForGames() 
-    {
-        Games = repository.GetGames().Where(x => x.Title.Contains(title)).ToList();
-        Console.WriteLine($"Title: {title}");
-        Console.WriteLine($"selectedGenre: {selectedGenre}");      
+        Genres = await genreRepository.GetGenres();
+        await LoadGames();
     }
 
-    private void Clear() 
+    private async Task SelectedPage(int page)
     {
-        Games = repository.GetGames();
-        title = "";
-        selectedGenre = "0"; 
+        gameFilterDto.Page = page;
+        await LoadGames();
     }
 
-    private void TitleKeyPress(KeyboardEventArgs e) 
+    private async Task LoadGames() 
+    {
+        var pageResponse = await gameRepository.GetGamesByFilter(gameFilterDto);
+        Games = pageResponse.Response;
+        amountOfPages = pageResponse.AmountOfPages;
+    }
+    
+    private async Task SearchForGames() 
+    {
+        await LoadGames();    
+    }
+
+    private async Task Clear() 
+    {
+        
+        gameFilterDto.Title = "";
+        gameFilterDto.GenreId = 0; 
+        await LoadGames();
+    }
+
+    private async Task TitleKeyPress(KeyboardEventArgs e) 
     {
         if(e.Key == "Enter")
         {
             //Implement here
-            SearchForGames();
+            await SearchForGames();
         }
     }
 }

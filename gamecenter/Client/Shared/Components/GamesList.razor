@@ -1,10 +1,11 @@
 @inject IJSRuntime js
+@inject IGameRepository gameRepository
 
 <div class="games-container">
 <GenericList List="Games">
     <ElementTemplate Context="game">
         <IndividualGame Game="game"
-                DeleteGame="DeleteGame"/>
+                DeleteGame="DeleteGame" @key="game.Id"/>
     </ElementTemplate>
 </GenericList>
 </div>
@@ -17,6 +18,7 @@
         var confirmed = await js.Confirm($"Are you sure you want to delete {game.Title}");
         if(confirmed) 
         {
+            await gameRepository.DeleteGame(game.Id);
             Games.Remove(game);
         }
 

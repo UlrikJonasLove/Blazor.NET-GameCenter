@@ -7,5 +7,6 @@ namespace gamecenter.Shared.Models
         public Person Person { get; set; }
         public Game Game { get; set; } 
         public string RoleOfGame { get; set; }
+        public int Order { get; set; }
     }
 }

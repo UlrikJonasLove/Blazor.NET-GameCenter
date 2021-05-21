@@ -1,4 +1,7 @@
 @page "/genre/create"
+@inject IGenreRepository genreRepository
+@inject NavigationManager navigationManager
+@attribute [Authorize]
 
 <h1>Create genre</h1>
 
@@ -9,7 +12,14 @@
 
     private async Task Create()
     {
-        Console.WriteLine("Create method");
-        Console.WriteLine(genre.Name);
+        try
+        {
+            await genreRepository.CreateGenre(genre);
+            navigationManager.NavigateTo("genres");
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 }
