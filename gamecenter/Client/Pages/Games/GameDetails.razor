@@ -56,7 +56,7 @@ else
     </div>
 </div>
 }
-@code {
+@code{
     [Parameter] public int GameId { get; set; }
     [Parameter] public string GameName { get; set; }
     private RenderFragment<Genre> linkGenre = (genre) =>@<a href="games/search?genreId=@genre.Id">@genre.Name</a>;

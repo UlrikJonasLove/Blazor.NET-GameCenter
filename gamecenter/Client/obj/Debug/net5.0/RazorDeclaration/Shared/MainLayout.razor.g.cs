@@ -159,6 +159,48 @@ using gamecenter.Shared.DTOs;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 41 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Shared\MainLayout.razor"
+      
+    private string selectedTheme = "Light";
+    private List<string> themes = new List<string>{ "Light", "Dark" };
+    private readonly string keyTheme = "theme";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", keyTheme);
+            if(!string.IsNullOrEmpty(themeFromLocalStorage))
+            {
+                selectedTheme = themeFromLocalStorage;
+            }
+    }
+    private string CssClass() 
+    {
+        if(selectedTheme == "Light")
+        {
+            return String.Empty;
+        }
+        else 
+        {
+            return "dark-mode";
+        }
+    }
+
+    private bool IsSelectedTheme(string theme)
+    {
+        return theme == selectedTheme;
+    }
+
+    private async Task ChangingTheme(ChangeEventArgs e)
+    {
+        selectedTheme = e.Value.ToString();
+        await js.InvokeVoidAsync("addToLocalStorage", keyTheme, selectedTheme);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
     }
 }
 #pragma warning restore 1591

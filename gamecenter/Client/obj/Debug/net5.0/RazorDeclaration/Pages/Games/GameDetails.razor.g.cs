@@ -163,7 +163,7 @@ using gamecenter.Shared.DTOs;
         #pragma warning restore 1998
 #nullable restore
 #line 59 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
-       
+      
     [Parameter] public int GameId { get; set; }
     [Parameter] public string GameName { get; set; }
     private RenderFragment<Genre> linkGenre = (genre) =>

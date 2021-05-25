@@ -5421,98 +5421,887 @@
         }
       },
       {
-        "HashCode": -1068410560,
+        "HashCode": 1907097041,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.MainLayout",
+        "Name": "gamecenter.Client.Pages.Games.GameDetails",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "MainLayout"
+            "TagName": "GameDetails"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
             "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
+              "Common.PropertyName": "GameId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GameName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "GameName"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout"
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails"
         }
       },
       {
-        "HashCode": 1980995479,
+        "HashCode": 1104420483,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.MainLayout",
+        "Name": "gamecenter.Client.Pages.Games.GameDetails",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "gamecenter.Client.Shared.MainLayout"
+            "TagName": "gamecenter.Client.Pages.Games.GameDetails"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
             "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
+              "Common.PropertyName": "GameId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GameName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "GameName"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 141478373,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "HashCode": -896393494,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.CreateGame",
         "AssemblyName": "gamecenter.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
+            "TagName": "CreateGame"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame"
         }
       },
       {
-        "HashCode": 356376893,
-        "Kind": "Components.ChildContent",
-        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "HashCode": 1331362451,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.CreateGame",
         "AssemblyName": "gamecenter.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Body",
-            "ParentTag": "gamecenter.Client.Shared.MainLayout"
+            "TagName": "gamecenter.Client.Pages.Games.CreateGame"
           }
         ],
         "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1858382898,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.EditGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditGame"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GameId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame"
+        }
+      },
+      {
+        "HashCode": -938252206,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.EditGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.EditGame"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GameId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1014269508,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameFilter",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameFilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter"
+        }
+      },
+      {
+        "HashCode": -173782553,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameFilter",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.GameFilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 922115349,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "gamecenter.Shared.Models.Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedGenre",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedGenre"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NotSelectedGenres",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
+            "Metadata": {
+              "Common.PropertyName": "NotSelectedGenres"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedPerson",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Person>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedPerson"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameForm"
+        }
+      },
+      {
+        "HashCode": -443078092,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.GameForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Game",
+            "TypeName": "gamecenter.Shared.Models.Game",
+            "Metadata": {
+              "Common.PropertyName": "Game"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedGenre",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedGenre"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "NotSelectedGenres",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
+            "Metadata": {
+              "Common.PropertyName": "NotSelectedGenres"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "SelectedPerson",
+            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Person>",
+            "Metadata": {
+              "Common.PropertyName": "SelectedPerson"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 961959337,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About"
+        }
+      },
+      {
+        "HashCode": -1245288828,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1137810242,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Login",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login"
+        }
+      },
+      {
+        "HashCode": -1751320131,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Login",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1142010316,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Logout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Logout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout"
+        }
+      },
+      {
+        "HashCode": -245705065,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Logout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Logout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 477873008,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Register",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register"
+        }
+      },
+      {
+        "HashCode": 271691359,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Register",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1144303651,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.CreateGenre",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreateGenre"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.CreateGenre"
+        }
+      },
+      {
+        "HashCode": 1406339401,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.CreateGenre",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Genres.CreateGenre"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.CreateGenre",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2084517880,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.EditGenre",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditGenre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GenreId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GenreId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.EditGenre"
+        }
+      },
+      {
+        "HashCode": -493967350,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.EditGenre",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Genres.EditGenre"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GenreId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GenreId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.EditGenre",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1182141295,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.GenreForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GenreForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Genre",
+            "TypeName": "gamecenter.Shared.Models.Genre",
+            "Metadata": {
+              "Common.PropertyName": "Genre"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenreForm"
+        }
+      },
+      {
+        "HashCode": 665373098,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.GenreForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Genres.GenreForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Genre",
+            "TypeName": "gamecenter.Shared.Models.Genre",
+            "Metadata": {
+              "Common.PropertyName": "Genre"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenreForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 407875625,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.GenresList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GenresList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenresList"
+        }
+      },
+      {
+        "HashCode": -726293943,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Genres.GenresList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Genres.GenresList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenresList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -774805202,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Index",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 1031302270,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Index",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1694215591,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.CreatePerson",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreatePerson"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson"
+        }
+      },
+      {
+        "HashCode": 1512245458,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.CreatePerson",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.People.CreatePerson"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1839742659,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.EditPerson",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditPerson"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "PersonId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "PersonId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.EditPerson"
+        }
+      },
+      {
+        "HashCode": 1368474833,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.EditPerson",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.People.EditPerson"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "PersonId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "PersonId"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.EditPerson",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1332227269,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PeopleList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList"
+        }
+      },
+      {
+        "HashCode": -183863747,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.People.PeopleList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 552503962,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PersonForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PersonForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Person",
+            "TypeName": "gamecenter.Shared.Models.Person",
+            "Metadata": {
+              "Common.PropertyName": "Person"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm"
+        }
+      },
+      {
+        "HashCode": -1596480692,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PersonForm",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.People.PersonForm"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Person",
+            "TypeName": "gamecenter.Shared.Models.Person",
+            "Metadata": {
+              "Common.PropertyName": "Person"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OnValidSubmit",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
+            "Metadata": {
+              "Common.PropertyName": "OnValidSubmit",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -813998827,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.App",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.App"
+        }
+      },
+      {
+        "HashCode": 1508184225,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.App",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -7253,6 +8042,102 @@
         }
       },
       {
+        "HashCode": -1068410560,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.MainLayout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 1980995479,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.MainLayout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 141478373,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 356376893,
+        "Kind": "Components.ChildContent",
+        "Name": "gamecenter.Client.Shared.MainLayout.Body",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "gamecenter.Client.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1506779332,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Shared.NavMenu",
@@ -7282,891 +8167,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -813998827,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.App",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.App"
-        }
-      },
-      {
-        "HashCode": 1508184225,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.App",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 961959337,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About"
-        }
-      },
-      {
-        "HashCode": -1245288828,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1137810242,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Login",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login"
-        }
-      },
-      {
-        "HashCode": -1751320131,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Login",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1142010316,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Logout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Logout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout"
-        }
-      },
-      {
-        "HashCode": -245705065,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Logout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Logout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 477873008,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Register",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register"
-        }
-      },
-      {
-        "HashCode": 271691359,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Register",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -896393494,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.CreateGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreateGame"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame"
-        }
-      },
-      {
-        "HashCode": 1331362451,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.CreateGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.CreateGame"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1858382898,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.EditGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditGame"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame"
-        }
-      },
-      {
-        "HashCode": -938252206,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.EditGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.EditGame"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1907097041,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameDetails",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameDetails"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GameName",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "GameName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails"
-        }
-      },
-      {
-        "HashCode": 1104420483,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameDetails",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.GameDetails"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GameName",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "GameName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1014269508,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameFilter",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameFilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter"
-        }
-      },
-      {
-        "HashCode": -173782553,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameFilter",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.GameFilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 922115349,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "gamecenter.Shared.Models.Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedGenre",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedGenre"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NotSelectedGenres",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
-            "Metadata": {
-              "Common.PropertyName": "NotSelectedGenres"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedPerson",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Person>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedPerson"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameForm"
-        }
-      },
-      {
-        "HashCode": -443078092,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.GameForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Game",
-            "TypeName": "gamecenter.Shared.Models.Game",
-            "Metadata": {
-              "Common.PropertyName": "Game"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedGenre",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedGenre"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "NotSelectedGenres",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Genre>",
-            "Metadata": {
-              "Common.PropertyName": "NotSelectedGenres"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "SelectedPerson",
-            "TypeName": "System.Collections.Generic.List<gamecenter.Shared.Models.Person>",
-            "Metadata": {
-              "Common.PropertyName": "SelectedPerson"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1144303651,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.CreateGenre",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreateGenre"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.CreateGenre"
-        }
-      },
-      {
-        "HashCode": 1406339401,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.CreateGenre",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Genres.CreateGenre"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.CreateGenre",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2084517880,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.EditGenre",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditGenre"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GenreId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GenreId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.EditGenre"
-        }
-      },
-      {
-        "HashCode": -493967350,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.EditGenre",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Genres.EditGenre"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GenreId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GenreId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.EditGenre",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1182141295,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.GenreForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GenreForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Genre",
-            "TypeName": "gamecenter.Shared.Models.Genre",
-            "Metadata": {
-              "Common.PropertyName": "Genre"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenreForm"
-        }
-      },
-      {
-        "HashCode": 665373098,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.GenreForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Genres.GenreForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Genre",
-            "TypeName": "gamecenter.Shared.Models.Genre",
-            "Metadata": {
-              "Common.PropertyName": "Genre"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenreForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 407875625,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.GenresList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GenresList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenresList"
-        }
-      },
-      {
-        "HashCode": -726293943,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Genres.GenresList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Genres.GenresList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Genres.GenresList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -774805202,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Index",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 1031302270,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Index",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1694215591,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson"
-        }
-      },
-      {
-        "HashCode": 1512245458,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1839742659,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.EditPerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditPerson"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "PersonId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "PersonId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.EditPerson"
-        }
-      },
-      {
-        "HashCode": 1368474833,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.EditPerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.EditPerson"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "PersonId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "PersonId"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.EditPerson",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1332227269,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PeopleList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PeopleList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList"
-        }
-      },
-      {
-        "HashCode": -183863747,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PeopleList",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.PeopleList"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 552503962,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PersonForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PersonForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Person",
-            "TypeName": "gamecenter.Shared.Models.Person",
-            "Metadata": {
-              "Common.PropertyName": "Person"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm"
-        }
-      },
-      {
-        "HashCode": -1596480692,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PersonForm",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.PersonForm"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Person",
-            "TypeName": "gamecenter.Shared.Models.Person",
-            "Metadata": {
-              "Common.PropertyName": "Person"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "OnValidSubmit",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback",
-            "Metadata": {
-              "Common.PropertyName": "OnValidSubmit",
-              "Components.EventCallback": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -25,5 +25,9 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css" />
     <script src="css/font-awesome/js/all.min.js"></script>
+    <script>
+        function addToLocalStorage(key, value) { localStorage[key] = value; }
+        function readLocalStorage(key) { return localStorage[key]; }
+    </script>
 </body>
 </html>
