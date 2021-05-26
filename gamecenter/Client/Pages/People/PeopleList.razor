@@ -32,7 +32,6 @@
         </table>
     </WholeListTemplate>
 </GenericList>
-
 <Page CurrentPage="@pageDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
 
 @code{
@@ -56,8 +55,6 @@
         pageDto.Page = page;
         await PersonList();
     }
-
-    
 
      private async Task PersonList()
     {

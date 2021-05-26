@@ -1,7 +1,6 @@
 @page "/users"
 @inject IUserRepository UserRepository
 
-<Page CurrentPage="@pageDto.Page" SelectedPage="SelectedPage" AmountOfPages="TotalAmountOfPages"></Page>
 <GenericList List="Users">
     <WholeListTemplate>
         <table class="table table-striped">
@@ -25,6 +24,7 @@
         </table>
     </WholeListTemplate>
 </GenericList>
+<Page CurrentPage="@pageDto.Page" SelectedPage="SelectedPage" AmountOfPages="TotalAmountOfPages"></Page>
 
 @code{
     List<UserDTO> Users;

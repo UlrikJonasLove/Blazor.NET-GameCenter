@@ -4,7 +4,7 @@
 
 @if (model == null)
 {
-    <text>Loading...</text>
+    <text>Loading</text>
 }
 else
 {
@@ -25,7 +25,7 @@ else
 
 <text> | </text> <span>@model.Game.ReleaseDate.Value.ToString("dd MMM yyyy")</span>
 
-<div style="display:flex">
+<div style="display: flex">
     <span style="display: inline-block; margin-right: 5px"><img src="@model.Game.Poster" style="width: 225px; height: 315px"></span>
     <iframe width="560" height="315" 
     src="https://www.youtube.com/embed/@model.Game.Trailer" 
@@ -43,10 +43,10 @@ else
 </div>
 <div style="margin-top: 10px;">
     <h3>People in Game</h3>
-    <div style="display: flex; flex-directions: column">
+    <div style="display: flex; flex-direction: column">
         @foreach(var person in model.PersonInGame)
         {
-            <div style="margin-bottom: 2px">
+            <div style="margin-bottom: 6px;">
                 <img style="width: 50px;" src="@person.Picture" />
                 <span style="display:inline-block; width: 200px;"><a href="/person/@person.Id/@person.Name.Replace(" ", "-")">@person.Name</a></span>
                 <span style="display:inline-block; width: 45px;">...</span>

@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": 961959337,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About"
-        }
-      },
-      {
-        "HashCode": -1245288828,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1137810242,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Pages.Auth.Login",
@@ -173,39 +140,6 @@
         }
       },
       {
-        "HashCode": -896393494,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.CreateGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreateGame"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame"
-        }
-      },
-      {
-        "HashCode": 1331362451,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.CreateGame",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.CreateGame"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1858382898,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Pages.Games.EditGame",
@@ -255,6 +189,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1014269508,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameFilter",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameFilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter"
+        }
+      },
+      {
+        "HashCode": -173782553,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameFilter",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.GameFilter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -896393494,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.CreateGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CreateGame"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame"
+        }
+      },
+      {
+        "HashCode": 1331362451,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.CreateGame",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.CreateGame"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.CreateGame",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -324,39 +324,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1014269508,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameFilter",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GameFilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter"
-        }
-      },
-      {
-        "HashCode": -173782553,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameFilter",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Games.GameFilter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameFilter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -703,39 +670,6 @@
         }
       },
       {
-        "HashCode": -1694215591,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson"
-        }
-      },
-      {
-        "HashCode": 1512245458,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1839742659,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Pages.People.EditPerson",
@@ -789,35 +723,35 @@
         }
       },
       {
-        "HashCode": -1332227269,
+        "HashCode": -1694215591,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "Name": "gamecenter.Client.Pages.People.CreatePerson",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "PeopleList"
+            "TagName": "CreatePerson"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList"
+          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson"
         }
       },
       {
-        "HashCode": -183863747,
+        "HashCode": 1512245458,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "Name": "gamecenter.Client.Pages.People.CreatePerson",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "gamecenter.Client.Pages.People.PeopleList"
+            "TagName": "gamecenter.Client.Pages.People.CreatePerson"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList",
+          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -889,6 +823,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.People.PersonForm",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1332227269,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PeopleList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList"
+        }
+      },
+      {
+        "HashCode": -183863747,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.People.PeopleList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.People.PeopleList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.People.PeopleList",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 961959337,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About"
+        }
+      },
+      {
+        "HashCode": -1245288828,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1513,193 +1513,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Shared.Components.IndividualGame",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -389474373,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Input"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TValue",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
-            "Metadata": {
-              "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "For",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
-            "Metadata": {
-              "Common.PropertyName": "For",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
-          "Components.GenericTyped": "True"
-        }
-      },
-      {
-        "HashCode": -630227766,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.Input"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "TValue",
-            "TypeName": "System.Type",
-            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
-            "Metadata": {
-              "Common.PropertyName": "TValue",
-              "Components.TypeParameter": "True",
-              "Components.TypeParameterIsCascading": "False"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "For",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
-            "Metadata": {
-              "Common.PropertyName": "For",
-              "Components.GenericTyped": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Label",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Label"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "AdditionalAttributes",
-            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
-            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "AdditionalAttributes"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "Value",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Value"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueChanged",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueChanged",
-              "Components.EventCallback": "True"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "ValueExpression",
-            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
-            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "ValueExpression"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "DisplayName",
-            "TypeName": "System.String",
-            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "DisplayName"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
-          "Components.GenericTyped": "True",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -2662,6 +2475,193 @@
         }
       },
       {
+        "HashCode": -389474373,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Input"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TValue",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
+            "Metadata": {
+              "Common.PropertyName": "TValue",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "For",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
+            "Metadata": {
+              "Common.PropertyName": "For",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
+          "Components.GenericTyped": "True"
+        }
+      },
+      {
+        "HashCode": -630227766,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.Input"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TValue",
+            "TypeName": "System.Type",
+            "Documentation": "Specifies the type of the type parameter TValue for the gamecenter.Client.Shared.Components.Input<TValue> component.",
+            "Metadata": {
+              "Common.PropertyName": "TValue",
+              "Components.TypeParameter": "True",
+              "Components.TypeParameterIsCascading": "False"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "For",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<TValue>>",
+            "Metadata": {
+              "Common.PropertyName": "For",
+              "Components.GenericTyped": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Label",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Label"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "AdditionalAttributes",
+            "TypeName": "System.Collections.Generic.IReadOnlyDictionary<System.String, System.Object>",
+            "Documentation": "\n            <summary>\n            Gets or sets a collection of additional attributes that will be applied to the created element.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "AdditionalAttributes"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Value",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the value of the input. This should be used with two-way binding.\n            </summary>\n            <example>\n            @bind-Value=\"model.PropertyName\"\n            </example>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueChanged",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "\n            <summary>\n            Gets or sets a callback that updates the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueChanged",
+              "Components.EventCallback": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ValueExpression",
+            "TypeName": "System.Linq.Expressions.Expression<System.Func<System.String>>",
+            "Documentation": "\n            <summary>\n            Gets or sets an expression that identifies the bound value.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "ValueExpression"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "DisplayName",
+            "TypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Gets or sets the display name for this field.\n            <para>This value is used when generating error messages when the input value fails to parse correctly.</para>\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "DisplayName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
+          "Components.GenericTyped": "True",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 682886926,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Shared.SurveyPrompt",
@@ -2711,6 +2711,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1506779332,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.NavMenu",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 809237294,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Shared.NavMenu",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -2807,39 +2840,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "gamecenter.Client.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1506779332,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.NavMenu",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 809237294,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Shared.NavMenu",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17133,89 +17133,6 @@
         }
       },
       {
-        "HashCode": 191170749,
-        "Kind": "Components.Bind",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Input",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>"
-        }
-      },
-      {
-        "HashCode": -66541129,
-        "Kind": "Components.Bind",
-        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
-        "AssemblyName": "gamecenter.Client",
-        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Shared.Components.Input",
-            "Attributes": [
-              {
-                "Name": "@bind-Value",
-                "Metadata": {
-                  "Common.DirectiveAttribute": "True"
-                }
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Bind",
-            "Name": "@bind-Value",
-            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
-            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
-            "Metadata": {
-              "Common.DirectiveAttribute": "True",
-              "Common.PropertyName": "Value"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Components.IsSpecialKind": "Components.Bind",
-          "Components.Bind.ValueAttribute": "Value",
-          "Components.Bind.ChangeAttribute": "ValueChanged",
-          "Components.Bind.ExpressionAttribute": "ValueExpression",
-          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1829396384,
         "Kind": "Components.Bind",
         "Name": "gamecenter.Client.Shared.Components.InputPassword",
@@ -17295,6 +17212,89 @@
           "Components.Bind.ChangeAttribute": "ValueChanged",
           "Components.Bind.ExpressionAttribute": "ValueExpression",
           "Common.TypeName": "gamecenter.Client.Shared.Components.InputPassword",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 191170749,
+        "Kind": "Components.Bind",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Input",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>"
+        }
+      },
+      {
+        "HashCode": -66541129,
+        "Kind": "Components.Bind",
+        "Name": "gamecenter.Client.Shared.Components.Input<TValue>",
+        "AssemblyName": "gamecenter.Client",
+        "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Shared.Components.Input",
+            "Attributes": [
+              {
+                "Name": "@bind-Value",
+                "Metadata": {
+                  "Common.DirectiveAttribute": "True"
+                }
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Bind",
+            "Name": "@bind-Value",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.String>",
+            "Documentation": "Binds the provided expression to the 'Value' property and a change event delegate to the 'ValueChanged' property of the component.",
+            "Metadata": {
+              "Common.DirectiveAttribute": "True",
+              "Common.PropertyName": "Value"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Components.IsSpecialKind": "Components.Bind",
+          "Components.Bind.ValueAttribute": "Value",
+          "Components.Bind.ChangeAttribute": "ValueChanged",
+          "Components.Bind.ExpressionAttribute": "ValueExpression",
+          "Common.TypeName": "gamecenter.Client.Shared.Components.Input<TValue>",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

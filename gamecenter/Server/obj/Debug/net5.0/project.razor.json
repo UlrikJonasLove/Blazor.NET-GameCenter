@@ -6116,39 +6116,6 @@
         }
       },
       {
-        "HashCode": -1694215591,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson"
-        }
-      },
-      {
-        "HashCode": 1512245458,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.People.CreatePerson",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.People.CreatePerson"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.People.CreatePerson",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1839742659,
         "Kind": "Components.Component",
         "Name": "gamecenter.Client.Pages.People.EditPerson",
