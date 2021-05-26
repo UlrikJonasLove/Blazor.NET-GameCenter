@@ -38,7 +38,7 @@ namespace gamecenter.Server.Controllers
 
                 if(result.Succeeded)
                 {
-                    return BuildToken(model);
+                    return await BuildToken(model);
                 }
                 else 
                 {
@@ -60,7 +60,7 @@ namespace gamecenter.Server.Controllers
 
                 if(result.Succeeded)
                 {
-                    return BuildToken(userInfo);
+                    return await BuildToken(userInfo);
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace gamecenter.Server.Controllers
             }
         }
 
-        private UserToken BuildToken(UserInfo userInfo)
+        private async Task<UserToken> BuildToken(UserInfo userInfo)
         {
             var claims = new List<Claim>()
             {
@@ -81,6 +81,10 @@ namespace gamecenter.Server.Controllers
                 new Claim(ClaimTypes.Email, userInfo.Email),
                 new Claim("myvalue", "something")
             };
+
+            var identityUser = await _userManager.FindByEmailAsync(userInfo.Email);
+            var claimsDb = await _userManager.GetClaimsAsync(identityUser);
+            claims.AddRange(claimsDb);
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

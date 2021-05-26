@@ -8,71 +8,167 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1907097041,
+        "HashCode": -813998827,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameDetails",
+        "Name": "gamecenter.Client.App",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GameDetails"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GameName",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "GameName"
-            }
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails"
+          "Common.TypeName": "gamecenter.Client.App"
         }
       },
       {
-        "HashCode": 1104420483,
+        "HashCode": 1508184225,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Games.GameDetails",
+        "Name": "gamecenter.Client.App",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "gamecenter.Client.Pages.Games.GameDetails"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "GameId",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "GameId"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "GameName",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "GameName"
-            }
+            "TagName": "gamecenter.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails",
+          "Common.TypeName": "gamecenter.Client.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 961959337,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About"
+        }
+      },
+      {
+        "HashCode": -1245288828,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.About",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.About"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1137810242,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Login",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login"
+        }
+      },
+      {
+        "HashCode": -1751320131,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Login",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1142010316,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Logout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Logout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout"
+        }
+      },
+      {
+        "HashCode": -245705065,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Logout",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Logout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 477873008,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Register",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register"
+        }
+      },
+      {
+        "HashCode": 271691359,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Auth.Register",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Auth.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -159,6 +255,75 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.Games.EditGame",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1907097041,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameDetails",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "GameDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GameId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GameName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "GameName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails"
+        }
+      },
+      {
+        "HashCode": 1104420483,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Games.GameDetails",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Games.GameDetails"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "GameId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "GameId"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "GameName",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "GameName"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Games.GameDetails",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -311,138 +476,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "gamecenter.Client.Pages.Games.GameForm",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 961959337,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About"
-        }
-      },
-      {
-        "HashCode": -1245288828,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.About",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.About"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.About",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1137810242,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Login",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login"
-        }
-      },
-      {
-        "HashCode": -1751320131,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Login",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Login",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1142010316,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Logout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Logout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout"
-        }
-      },
-      {
-        "HashCode": -245705065,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Logout",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Logout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Logout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 477873008,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Register",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register"
-        }
-      },
-      {
-        "HashCode": 271691359,
-        "Kind": "Components.Component",
-        "Name": "gamecenter.Client.Pages.Auth.Register",
-        "AssemblyName": "gamecenter.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "gamecenter.Client.Pages.Auth.Register"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.Pages.Auth.Register",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -860,35 +893,88 @@
         }
       },
       {
-        "HashCode": -813998827,
+        "HashCode": 1324747672,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.App",
+        "Name": "gamecenter.Client.Pages.Users.EditUser",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "UserId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.App"
+          "Common.TypeName": "gamecenter.Client.Pages.Users.EditUser"
         }
       },
       {
-        "HashCode": 1508184225,
+        "HashCode": -992016664,
         "Kind": "Components.Component",
-        "Name": "gamecenter.Client.App",
+        "Name": "gamecenter.Client.Pages.Users.EditUser",
         "AssemblyName": "gamecenter.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "gamecenter.Client.App"
+            "TagName": "gamecenter.Client.Pages.Users.EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "UserId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "UserId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "gamecenter.Client.App",
+          "Common.TypeName": "gamecenter.Client.Pages.Users.EditUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 868492430,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Users.UsersList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UsersList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Users.UsersList"
+        }
+      },
+      {
+        "HashCode": 1632894602,
+        "Kind": "Components.Component",
+        "Name": "gamecenter.Client.Pages.Users.UsersList",
+        "AssemblyName": "gamecenter.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "gamecenter.Client.Pages.Users.UsersList"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "gamecenter.Client.Pages.Users.UsersList",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17952,6 +18038,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\Pages\\Users\\EditUser.razor",
+      "TargetPath": "Pages\\Users\\EditUser.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\Shared\\Components\\InputImg.razor",
       "TargetPath": "Shared\\Components\\InputImg.razor",
       "FileKind": "component"
@@ -18039,6 +18130,11 @@
     {
       "FilePath": "c:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\Shared\\Components\\TypeaheadSelector.razor",
       "TargetPath": "Shared\\Components\\TypeaheadSelector.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\jonas\\Desktop\\myCode\\1. Skola\\Webbutveckling .NET\\Kurser\\11, LIA - Lärande i Arbete 2\\Projekt\\GameCenter-Blazor\\gamecenter\\Client\\Pages\\Users\\UsersList.razor",
+      "TargetPath": "Pages\\Users\\UsersList.razor",
       "FileKind": "component"
     },
     {

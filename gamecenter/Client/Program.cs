@@ -37,6 +37,7 @@ namespace gamecenter.Client
             services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddAuthorizationCore();
             services.AddScoped<JwtAuthStateProvider>();
             services.AddScoped<AuthenticationStateProvider, JwtAuthStateProvider>(
