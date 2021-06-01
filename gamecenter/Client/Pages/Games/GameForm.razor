@@ -10,6 +10,13 @@
         </div>
     </div>
     <div class="form-group">
+        <label>Newly Release</label>
+        <div>
+            <InputCheckbox @bind-Value="Game.NewlyReleases" />
+            <ValidationMessage For="@(() => Game.NewlyReleases)" />
+        </div>
+    </div>
+    <div class="form-group">
         <label>Trailer:</label>
         <div>
             <InputText class="form-control" @bind-Value="@Game.Trailer" />

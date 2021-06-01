@@ -8,6 +8,7 @@
         <a class="btn btn-info" href="person/create">New Person</a>
 </div>
 
+<Page CurrentPage="@pageDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
 <GenericList List="Person">
     <WholeListTemplate>
         <table class="table table-striped">
@@ -32,7 +33,6 @@
         </table>
     </WholeListTemplate>
 </GenericList>
-<Page CurrentPage="@pageDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
 
 @code{
     List<Person> Person;

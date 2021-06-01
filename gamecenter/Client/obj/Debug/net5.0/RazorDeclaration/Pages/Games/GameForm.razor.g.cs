@@ -160,7 +160,7 @@ using gamecenter.Shared.DTOs;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 63 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
        
     [Parameter] public Game Game { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
@@ -207,14 +207,14 @@ using gamecenter.Shared.DTOs;
 #line hidden
 #nullable disable
 #nullable restore
-#line 96 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 103 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
          if(!string.IsNullOrWhiteSpace(Game.Poster)) { imageURL = null; }
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 96 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
+#line 103 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameForm.razor"
                                                                          
 
         await OnValidSubmit.InvokeAsync(null);

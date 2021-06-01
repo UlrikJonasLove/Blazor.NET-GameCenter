@@ -6,11 +6,14 @@
 
 <h1>Create game</h1>
 
+<EditForm Model="Game">
+    <ValidationSummary />
+</EditForm>
+
 @if (NotSelectedGenres != null)
 {
     <GameForm Game="Game" OnValidSubmit="SaveGame" NotSelectedGenres="NotSelectedGenres" />
 }
-
 
 @code {
     private Game Game = new Game();

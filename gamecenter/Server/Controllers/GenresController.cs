@@ -29,9 +29,20 @@ namespace gamecenter.Server.Controllers
         {
             try
             {
-                context.Add(genre);
-                await context.SaveChangesAsync();
+                Genre existingGenre = context.Genres.FirstOrDefault(g => g.Name == genre.Name.ToLower());
+                if(existingGenre != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Genre already exist");
+                }
+                else if(ModelState.IsValid)
+                {
+                    context.Add(genre);
+                    await context.SaveChangesAsync();
+                    return Ok();
+                }
+
                 return Ok();
+            
             }
             catch(Exception)
             {

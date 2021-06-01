@@ -53,9 +53,18 @@ namespace gamecenter.Server.Controllers
                     }
                 }
 
-                context.Add(game);
-                await context.SaveChangesAsync();
-                return game.Id;
+                Game existingGame = context.Games.FirstOrDefault(g => g.Title == game.Title.ToLower());
+                if(existingGame != null)
+                {
+                    ModelState.AddModelError(string.Empty, "This Game already exist");
+                }
+                else if(ModelState.IsValid)
+                {
+                    context.Add(game);
+                    await context.SaveChangesAsync();
+                    return game.Id;
+                }
+                return Ok();          
             }
             catch(Exception)
             {
@@ -92,7 +101,7 @@ namespace gamecenter.Server.Controllers
             } 
         }
 
-        [HttpGet]
+      /*  [HttpGet]
         [AllowAnonymous]
         public async Task<ActionResult<List<Game>>> Get()
         {
@@ -104,7 +113,7 @@ namespace gamecenter.Server.Controllers
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
             }        
-        }
+        } */
 
         //[HttpGet("{id}")] 
         //public async Task<ActionResult<Game>> Get(int id)
@@ -147,6 +156,32 @@ namespace gamecenter.Server.Controllers
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "database failure");
             }   
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<ActionResult<IndexPageDTO>> Get()
+        {
+            var limit = 6;
+
+            var newlyReleases = await context.Games
+                .Where(x => x.NewlyReleases).Take(limit)
+                .OrderByDescending(x => x.ReleaseDate)
+                .ToListAsync();
+
+            var todaysDate = DateTime.Today;
+
+            var upcomingReleases = await context.Games
+                .Where(x => x.ReleaseDate > todaysDate)
+                .OrderBy(x => x.ReleaseDate).Take(limit)
+                .ToListAsync();
+
+            var response = new IndexPageDTO();
+            response.NewlyReleases = newlyReleases;
+            response.UpcomingReleases = upcomingReleases;
+
+            return response;
+
         }
 
         [HttpGet("update/{id}")]

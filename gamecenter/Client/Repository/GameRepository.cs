@@ -20,6 +20,16 @@ namespace gamecenter.Client.Repository
             this.httpService = httpService;
         }
 
+        public async Task<IndexPageDTO> GetIndexPageDto()
+        {
+            var response = await httpService.Get<IndexPageDTO>(url);
+            if(!response.Success)
+            {
+                throw new ApplicationException(await response.GetBody());
+            }
+            return response.Response;
+        }
+
         public async Task<UpdateGameDTO> GetGamesForUpdate(int id)
         {
             return await httpService.GetHelper<UpdateGameDTO>($"{url}/update/{id}");

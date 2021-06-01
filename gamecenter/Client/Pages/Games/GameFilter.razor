@@ -17,15 +17,25 @@
         <option value="@genre.Id">@genre.Name</option>
     }
     </select>
-
+    <div class="form-group mx-sm-3 mb-2">
+        <input type="checkbox" class="form-check-input" id="newlyReleases" />
+        <label class="form-check-label" for="upcomingReleases">
+            Newly Releases
+        </label>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <input type="checkbox" class="form-check-input" id="upcomingReleases" />
+        <label class="form-check-label" for="upcomingReleases">
+            Upcoming Releases
+        </label>
+    </div>
     <button type="button" class="btn btn-primary mb-2 mx-sm-3" @onclick="SearchForGames">Filter</button>
     <button type="button" class="btn btn-danger mb-2" @onclick="Clear">Clear</button>
 </div>
 </div>
 </EditForm>
-<GamesList Games="Games"></GamesList>
-
 <Page CurrentPage="gameFilterDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
+<GamesList Games="Games"></GamesList>
 
 @code{
     private List<Game> Games;

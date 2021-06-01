@@ -161,7 +161,7 @@ using gamecenter.Shared.DTOs;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameFilter.razor"
+#line 40 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameFilter.razor"
       
     private List<Game> Games;
     private GameFilterDTO gameFilterDto = new GameFilterDTO();

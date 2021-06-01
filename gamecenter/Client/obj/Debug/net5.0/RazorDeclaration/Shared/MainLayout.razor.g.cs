@@ -169,10 +169,10 @@ using gamecenter.Shared.DTOs;
     protected override async Task OnInitializedAsync()
     {
         var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", keyTheme);
-            if(!string.IsNullOrEmpty(themeFromLocalStorage))
-            {
-                selectedTheme = themeFromLocalStorage;
-            }
+        if(!string.IsNullOrEmpty(themeFromLocalStorage))
+        {
+            selectedTheme = themeFromLocalStorage;
+        }
     }
     private string CssClass() 
     {

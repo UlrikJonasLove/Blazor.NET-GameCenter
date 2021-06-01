@@ -153,6 +153,7 @@ using gamecenter.Shared.DTOs;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/index")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -160,6 +161,23 @@ using gamecenter.Shared.DTOs;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 15 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Index.razor"
+       
+    private List<Game> NewlyReleases;
+    private List<Game> UpcomingReleases;
+
+    protected async override Task OnInitializedAsync()
+    {
+        var response = await gameRepository.GetIndexPageDto();
+        NewlyReleases = response.NewlyReleases;
+        UpcomingReleases = response.UpcomingReleases;
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGameRepository gameRepository { get; set; }
     }
 }
 #pragma warning restore 1591

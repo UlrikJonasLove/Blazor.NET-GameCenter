@@ -10,6 +10,7 @@ namespace gamecenter.Shared.Models
         [Required]
         public string Title { get; set; }
         public string Summary { get; set; }
+        public bool NewlyReleases { get; set; }
         public string Trailer { get; set; }
         [Required]
         public DateTime? ReleaseDate { get; set; }

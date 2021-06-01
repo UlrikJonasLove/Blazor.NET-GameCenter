@@ -13,6 +13,7 @@ namespace gamecenter.Client.Repository.Interface
         Task<List<Game>> GetGames();
         Task<PageResponse<List<Game>>> GetGamesByFilter(GameFilterDTO gameFilterDto);
         Task<UpdateGameDTO> GetGamesForUpdate(int id);
+        Task<IndexPageDTO> GetIndexPageDto();
         Task UpdateGame(Game game);
     }
 }
