@@ -85,6 +85,17 @@ namespace gamecenter.Server.Controllers
                     gameQueryable = gameQueryable.Where(x => x.Title.Contains(gameFilterDto.Title));
                 }
 
+                if(gameFilterDto.NewlyReleases)
+                {
+                    gameQueryable = gameQueryable.Where(x => x.NewlyReleases);
+                }
+
+                if(gameFilterDto.UpcomingReleases)
+                {
+                    var today = DateTime.Today;
+                    gameQueryable = gameQueryable.Where(x => x.ReleaseDate > today);
+                }
+
                 if(gameFilterDto.GenreId != 0)
                 {
                     gameQueryable = gameQueryable.Where(x => x.GamesGenres.Select(y => y.GenreId).Contains(gameFilterDto.GenreId));

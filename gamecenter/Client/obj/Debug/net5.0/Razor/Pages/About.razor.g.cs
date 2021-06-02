@@ -158,6 +158,7 @@ using gamecenter.Shared.DTOs;
             __builder.AddMarkupContent(0, "<h1>About</h1>");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

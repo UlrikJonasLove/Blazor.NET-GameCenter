@@ -180,6 +180,7 @@ using gamecenter.Shared.DTOs;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGameRepository gameRepository { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 #pragma warning restore 1591

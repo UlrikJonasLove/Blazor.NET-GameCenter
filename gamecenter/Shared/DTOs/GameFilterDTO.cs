@@ -10,5 +10,7 @@ namespace gamecenter.Shared.DTOs
         }
         public string Title { get; set; }
         public int GenreId { get; set; }
+        public bool NewlyReleases { get; set; }
+        public bool UpcomingReleases { get; set; }
     }
 }

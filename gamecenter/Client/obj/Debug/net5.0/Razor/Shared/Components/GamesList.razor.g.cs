@@ -220,6 +220,7 @@ using gamecenter.Shared.DTOs;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGameRepository gameRepository { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 namespace __Blazor.gamecenter.Client.Shared.Components.GamesList

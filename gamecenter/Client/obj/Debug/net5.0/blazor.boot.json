@@ -199,13 +199,13 @@
       "mscorlib.dll": "sha256-aRw41w\/QxOqc3NzhbK7UKf1zT6z\/oHtp9BlXl4JWwjM=",
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
-      "gamecenter.Shared.dll": "sha256-hwPDahEWUU83mK6KtLdfIvod2v1x+WaQ0ShTNB2LM0A=",
-      "gamecenter.Client.dll": "sha256-KOD70VdLWVPD+Kf+N9EbcFVNy0it9fI2nNtZNiGn7kc="
+      "gamecenter.Shared.dll": "sha256-2FYwQpJmlLOHbfZm0vvV6Ime\/9nBmmnhVeCSL3iosjM=",
+      "gamecenter.Client.dll": "sha256-R2KXt73Nm0LEsZZOWvcCdzWRZbwSZbmfhty\/3UUwsfQ="
     },
     "lazyAssembly": null,
     "pdb": {
-      "gamecenter.Shared.pdb": "sha256-B9rzNYVT5rqi0Dh+o3pnKlKQL4\/4sGuvrm+47vcbsZI=",
-      "gamecenter.Client.pdb": "sha256-kVmDj1+7B6qm0nQixYQliA3nTmwOa1anjuiOCH8Oad8="
+      "gamecenter.Shared.pdb": "sha256-dMiJYoVX6fJPBH1+EJfolmTcb0c9EdD6DVFhDuKxvGk=",
+      "gamecenter.Client.pdb": "sha256-ZIMXGCWEkXy4O0WewZUXfCEa6tsmias5Yn0qeDordDc="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",

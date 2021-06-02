@@ -312,6 +312,7 @@ using gamecenter.Shared.DTOs;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPersonRepository personRepository { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 namespace __Blazor.gamecenter.Client.Pages.People.PeopleList

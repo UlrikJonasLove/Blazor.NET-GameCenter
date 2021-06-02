@@ -223,6 +223,7 @@ using gamecenter.Shared.DTOs;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 namespace __Blazor.gamecenter.Client.Pages.Genres.GenreForm

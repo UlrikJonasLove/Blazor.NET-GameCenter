@@ -241,6 +241,7 @@ using System.Linq.Expressions;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }
 namespace __Blazor.gamecenter.Client.Shared.Components.Input
