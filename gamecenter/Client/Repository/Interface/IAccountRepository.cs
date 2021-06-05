@@ -7,5 +7,6 @@ namespace gamecenter.Client.Repository.Interface
     {
         Task<UserToken> Login(UserInfo userInfo);
         Task<UserToken> Register(UserInfo userInfo);
+        Task<UserToken> RenewToken();
     }
 }

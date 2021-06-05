@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace gamecenter.Client.Repository.Interface
 {
-    interface IPersonRepository
+    public interface IPersonRepository
     {
         Task CreatePerson(Person person);
         Task DeletePerson(int Id);

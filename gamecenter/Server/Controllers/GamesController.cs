@@ -7,6 +7,7 @@ using gamecenter.Shared.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -25,13 +26,15 @@ namespace gamecenter.Server.Controllers
         private readonly AppDbContext context;
         private readonly IFileStorageService fileStorageService;
         private readonly IMapper mapper;
+        private readonly UserManager<IdentityUser> userManager;
         private string containerName = "games";
 
-        public GamesController(AppDbContext context, IFileStorageService fileStorageService, IMapper mapper)
+        public GamesController(AppDbContext context, IFileStorageService fileStorageService, IMapper mapper, UserManager<IdentityUser> userManager)
         {
             this.context = context;
             this.fileStorageService = fileStorageService;
             this.mapper = mapper;
+            this.userManager = userManager;
         }
 
         [HttpPost]
@@ -147,6 +150,29 @@ namespace gamecenter.Server.Controllers
 
                 if(game == null) { return NotFound(); }
 
+                var voteAverage = 0.0;
+                var uservote = 0;
+
+                if(await context.GameRatings.AnyAsync(x => x.GameId == id))
+                {
+                    voteAverage = await context.GameRatings.Where(x => x.GameId == id)
+                        .AverageAsync(x => x.Rate);
+
+                    if(HttpContext.User.Identity.IsAuthenticated)
+                    {
+                        var user = await userManager.FindByEmailAsync(HttpContext.User.Identity.Name);
+                        var userId = user.Id;
+
+                        var userVoteDb = await context.GameRatings
+                            .FirstOrDefaultAsync(x => x.GameId == id && x.UserId == userId);
+
+                        if (userVoteDb != null)
+                        {
+                            uservote = userVoteDb.Rate;
+                        }
+                    }
+                }
+
                 game.GamesPeople = game.GamesPeople.OrderBy(x => x.Order).ToList();
 
                 var model = new GameDetailDTO();
@@ -160,7 +186,9 @@ namespace gamecenter.Server.Controllers
                         RoleInGame = x.RoleOfGame,
                         Id = x.PersonId
                     }).ToList();
-
+                    
+                model.UserVote = uservote;
+                model.AverageVote = voteAverage;
                 return model;
             }
             catch(Exception)

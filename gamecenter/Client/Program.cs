@@ -31,19 +31,21 @@ namespace gamecenter.Client
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<IRepository, RepositoryInMemory>();
             services.AddScoped<IHttpService, HttpService>();
             services.AddScoped<IGameRepository, GameRepository>();
             services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRatingRepository, RatingRepository>();
+            services.AddScoped<IDisplayMessage, DisplayMessage>();
             services.AddAuthorizationCore();
             services.AddScoped<JwtAuthStateProvider>();
             services.AddScoped<AuthenticationStateProvider, JwtAuthStateProvider>(
                 provider => provider.GetRequiredService<JwtAuthStateProvider>());
             services.AddScoped<ILoginService, JwtAuthStateProvider>(
                 provider => provider.GetRequiredService<JwtAuthStateProvider>());
+            services.AddScoped<TokenRenewer>();
         }
     }
 }

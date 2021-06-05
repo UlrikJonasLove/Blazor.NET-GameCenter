@@ -1,6 +1,7 @@
 @page "/users/edit/{userId}"
 @inject IUserRepository userRepository
 @inject IJSRuntime js
+@inject IDisplayMessage displayMessage
 
 <h1>Edit Users</h1>
 
@@ -28,19 +29,25 @@
 
     private async Task AssignRole()
     {
-        var alert = await js.Confirm("Role Assigned");
-        if(alert)
+
+        if(selectedRole == "0")
         {
-            await userRepository.AssignRole(new EditRoleDTO { RoleName = selectedRole, UserId = UserId });
+            await displayMessage.DisplayErrorMessage("You must select a role");
+            return;
         }
+        await userRepository.AssignRole(new EditRoleDTO { RoleName = selectedRole, UserId = UserId });
+        await displayMessage.DisplaySuccessMessage("Role has been assigned!");
+
     }
 
     private async Task RemoveRole()
     {
-        var alert = await js.Confirm("Role Removed");
-        if(alert)
+        if(selectedRole == "0")
         {
-            await userRepository.RemoveRole(new EditRoleDTO { RoleName = selectedRole, UserId = UserId });
+            await displayMessage.DisplayErrorMessage("You must select a role");
+            return;
         }
+        await userRepository.RemoveRole(new EditRoleDTO { RoleName = selectedRole, UserId = UserId });
+        await displayMessage.DisplaySuccessMessage("Role has been removed!");
     }
 }

@@ -12,6 +12,7 @@ using System.Text.Json;
 using System.Linq;
 using gamecenter.Client.Authentication.Interface;
 using gamecenter.Client.Helpers;
+using gamecenter.Client.Repository.Interface;
 
 namespace gamecenter.Client.Authentication
 {
@@ -19,13 +20,17 @@ namespace gamecenter.Client.Authentication
     {
         private readonly IJSRuntime js;
         private readonly HttpClient httpClient;
+        private readonly IAccountRepository accountRepository;
         private readonly string TOKENKEY = "TOKENKEY";
+        private readonly string EXPIRATIONTOKENKEY = "EXPIRATIONTOKENKEY";
+
         private AuthenticationState Anonymous => new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
 
-        public JwtAuthStateProvider(IJSRuntime js, HttpClient httpClient)
+        public JwtAuthStateProvider(IJSRuntime js, HttpClient httpClient, IAccountRepository accountRepository)
         {
             this.js = js;
             this.httpClient = httpClient;
+            this.accountRepository = accountRepository;
         }
 
         public async override Task<AuthenticationState> GetAuthenticationStateAsync()
@@ -34,8 +39,64 @@ namespace gamecenter.Client.Authentication
 
             if(string.IsNullOrEmpty(token)) { return Anonymous; }
 
-            return BuildAuthState(token);
+            var expirationTimeString = await js.GetFromLocalStorage(EXPIRATIONTOKENKEY);
+            DateTime expirationTime;
 
+            if(DateTime.TryParse(expirationTimeString, out expirationTime))
+            {
+                if(IsTokenExpired(expirationTime))
+                {
+                    await CleanUp();
+                    return Anonymous;
+                }
+
+                if(ShouldRenewToken(expirationTime))
+                {
+                    token = await RenewToken(token);
+                }
+            }
+            return BuildAuthState(token);
+        }
+
+        public async Task TryRenewToken()
+        {
+            var expirationTimeString = await js.GetFromLocalStorage(EXPIRATIONTOKENKEY);
+            DateTime expirationTime;
+
+            if(DateTime.TryParse(expirationTimeString, out expirationTime))
+            {
+                if(IsTokenExpired(expirationTime))
+                {
+                    await Logout();
+                }
+
+                if(ShouldRenewToken(expirationTime))
+                {
+                    var token = await js.GetFromLocalStorage(TOKENKEY);
+                    var newToken = await RenewToken(token);
+                    var authState = BuildAuthState(newToken);
+                    NotifyAuthenticationStateChanged(Task.FromResult(authState));
+                }
+            }
+        }
+
+        private async Task<string> RenewToken(string token)
+        {
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
+            var newToken = await accountRepository.RenewToken();
+            await js.SetInLocalStorage(TOKENKEY, newToken.Token);
+            await js.SetInLocalStorage(TOKENKEY, newToken.Expiration.ToString());
+            return newToken.Token;
+        }
+
+        private bool ShouldRenewToken(DateTime expirationTime)
+        {
+            return expirationTime.Subtract(DateTime.UtcNow) < TimeSpan.FromMinutes(5);
+        }
+
+        private bool IsTokenExpired(DateTime expirationTime)
+        {
+            return expirationTime <= DateTime.UtcNow;
         }
 
         public AuthenticationState BuildAuthState(string token)
@@ -86,11 +147,11 @@ namespace gamecenter.Client.Authentication
             return Convert.FromBase64String(base64);
         }
 
-        public async Task Login(string token)
+        public async Task Login(UserToken userToken)
         {
-            await js.SetInLocalStorage(TOKENKEY, token);
-            //await js.SetInLocalStorage(EXPIRATIONTOKENKEY, userToken.Expiration.ToString());
-            var authState = BuildAuthState(token);
+            await js.SetInLocalStorage(TOKENKEY, userToken.Token);
+            await js.SetInLocalStorage(EXPIRATIONTOKENKEY, userToken.Expiration.ToString());
+            var authState = BuildAuthState(userToken.Token);
             NotifyAuthenticationStateChanged(Task.FromResult(authState));
         }
 
@@ -103,7 +164,9 @@ namespace gamecenter.Client.Authentication
         public async Task CleanUp()
         {
             await js.RemoveItem(TOKENKEY);
+            await js.RemoveItem(EXPIRATIONTOKENKEY);
             httpClient.DefaultRequestHeaders.Authorization = null;
         }
+
     }
 }

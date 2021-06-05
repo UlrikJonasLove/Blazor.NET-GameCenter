@@ -1,5 +1,7 @@
 @inherits LayoutComponentBase
 @inject IJSRuntime js
+@inject gamecenter.Client.Authentication.TokenRenewer tokenRenewer
+
 
 <div class="page @CssClass()">
     <div class="sidebar">
@@ -42,15 +44,19 @@
     private string selectedTheme = "Light";
     private List<string> themes = new List<string>{ "Light", "Dark" };
     private readonly string keyTheme = "theme";
+    [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
+        await js.InitializeInactivityTimer(DotNetObjectReference.Create(this));
+        tokenRenewer.Initiate();
         var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", keyTheme);
         if(!string.IsNullOrEmpty(themeFromLocalStorage))
         {
             selectedTheme = themeFromLocalStorage;
         }
-    }
+    } 
+
     private string CssClass() 
     {
         if(selectedTheme == "Light")
@@ -72,5 +78,15 @@
     {
         selectedTheme = e.Value.ToString();
         await js.InvokeVoidAsync("addToLocalStorage", keyTheme, selectedTheme);
+    }
+
+    [JSInvokable]
+    public async Task Logout()
+    {
+        var authState = await AuthenticationState;
+        if(authState.User.Identity.IsAuthenticated)
+        {
+            navigationManager.NavigateTo("logout");
+        }
     }
 }

@@ -39,5 +39,17 @@ namespace gamecenter.Client.Repository
 
             return response.Response;
         }
+
+        public async Task<UserToken> RenewToken()
+        {
+            var response = await httpService.Get<UserToken>($"{baseUrl}/RenewToken");
+
+            if(!response.Success)
+            {
+                throw new ApplicationException(await response.GetBody());
+            }
+
+            return response.Response;
+        }
     }
 }

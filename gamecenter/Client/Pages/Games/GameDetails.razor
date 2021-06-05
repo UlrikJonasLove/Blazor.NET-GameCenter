@@ -1,6 +1,8 @@
 @page "/game/{GameId:int}"
 @page "/game/{GameId:int}/{GameName}"
 @inject IGameRepository gameRepository
+@inject IRatingRepository ratingRepository
+@inject IDisplayMessage displayMessage
 
 @if (model == null)
 {
@@ -22,8 +24,9 @@ else
 
     }
 
-
 <text> | </text> <span>@model.Game.ReleaseDate.Value.ToString("dd MMM yyyy")</span>
+//<text> | Average: </text> @model.AverageVote.ToString("0.#") <text>/5 | Your Vote: </text>
+/*<Rating MaximumRating="5" SelectedRating="model.UserVote" OnVote="OnVote" /> */
 
 <div style="display: flex">
     <span style="display: inline-block; margin-right: 5px"><img src="@model.Game.Poster" style="width: 225px; height: 315px"></span>
@@ -65,4 +68,12 @@ else
     {
         model = await gameRepository.GetGameDetailDTO(GameId);
     }
+
+    /*private async Task OnVote(int selectedRate)
+    {
+        model.UserVote = selectedRate;
+        var gameRating = new GameRating() { Rate = selectedRate, GameId = GameId };
+        await ratingRepository.Vote(gameRating);
+        await displayMessage.DisplaySuccessMessage("Your vote has been recieved!");
+    } */
 }

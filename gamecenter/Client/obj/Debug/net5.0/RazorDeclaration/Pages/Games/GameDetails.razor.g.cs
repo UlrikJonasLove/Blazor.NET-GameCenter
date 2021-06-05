@@ -162,7 +162,7 @@ using gamecenter.Shared.DTOs;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 59 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
+#line 62 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
       
     [Parameter] public int GameId { get; set; }
     [Parameter] public string GameName { get; set; }
@@ -175,7 +175,7 @@ using gamecenter.Shared.DTOs;
             __builder2.OpenElement(0, "a");
             __builder2.AddAttribute(1, "href", "games/search?genreId=" + (
 #nullable restore
-#line 62 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
+#line 65 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
                                                                                         genre.Id
 
 #line default
@@ -184,7 +184,7 @@ using gamecenter.Shared.DTOs;
             ));
             __builder2.AddContent(2, 
 #nullable restore
-#line 62 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
+#line 65 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
                                                                                                    genre.Name
 
 #line default
@@ -194,7 +194,7 @@ using gamecenter.Shared.DTOs;
             __builder2.CloseElement();
         }
 #nullable restore
-#line 62 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
+#line 65 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Pages\Games\GameDetails.razor"
                                                                                                                  ;
     GameDetailDTO model;
     protected async override Task OnInitializedAsync()
@@ -202,9 +202,19 @@ using gamecenter.Shared.DTOs;
         model = await gameRepository.GetGameDetailDTO(GameId);
     }
 
+    /*private async Task OnVote(int selectedRate)
+    {
+        model.UserVote = selectedRate;
+        var gameRating = new GameRating() { Rate = selectedRate, GameId = GameId };
+        await ratingRepository.Vote(gameRating);
+        await displayMessage.DisplaySuccessMessage("Your vote has been recieved!");
+    } */
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IDisplayMessage displayMessage { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRatingRepository ratingRepository { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IGameRepository gameRepository { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }

@@ -25,5 +25,6 @@ namespace gamecenter.Server.Data
         public DbSet<Person> People { get; set; }
         public DbSet<GamesPeople> GamesPeople { get; set; }
         public DbSet<GamesGenres> GamesGenres { get; set; }
+        public DbSet<GameRating> GameRatings { get; set; }
     }
 }
