@@ -160,7 +160,7 @@ using gamecenter.Shared.DTOs;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Shared\MainLayout.razor"
+#line 33 "C:\Users\jonas\Desktop\myCode\1. Skola\Webbutveckling .NET\Kurser\11, LIA - Lärande i Arbete 2\Projekt\GameCenter-Blazor\gamecenter\Client\Shared\MainLayout.razor"
       
     private string selectedTheme = "Light";
     private List<string> themes = new List<string>{ "Light", "Dark" };
