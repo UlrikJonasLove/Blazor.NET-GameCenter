@@ -1,6 +1,8 @@
 using gamecenter.Shared.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace gamecenter.Server.Data
 {
@@ -18,6 +20,18 @@ namespace gamecenter.Server.Data
             modelBuilder.Entity<GamesPeople>().HasKey(x => new { x.GameId, x.PersonId});
 
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Game>().HasData(new Game
+            {
+                Id = 1,
+                Title = "Red Dead Redemption 2",
+                Summary = "* Red Dead Redemption 2",
+                NewlyReleases = true,
+                Trailer = "SXvQ1nK4oxk",
+                ReleaseDate = new DateTime(2018, 10, 26),
+                Poster = "Images"
+
+            });
         }
 
         public DbSet<Genre> Genres { get; set; }

@@ -202,13 +202,13 @@ using gamecenter.Shared.DTOs;
         model = await gameRepository.GetGameDetailDTO(GameId);
     }
 
-    /*private async Task OnVote(int selectedRate)
+    private async Task OnVote(int selectedRate)
     {
         model.UserVote = selectedRate;
         var gameRating = new GameRating() { Rate = selectedRate, GameId = GameId };
         await ratingRepository.Vote(gameRating);
         await displayMessage.DisplaySuccessMessage("Your vote has been recieved!");
-    } */
+    } 
 
 #line default
 #line hidden
