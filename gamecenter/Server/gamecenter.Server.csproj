@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Helpers\Interface\" />
-    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 
