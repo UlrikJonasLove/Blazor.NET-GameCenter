@@ -4,12 +4,12 @@
 gamecenter
 gamecenter - identityServer4
 
-#### Custom Authentication
-The project in the folder "gamecenter" is with custom authentication
-
 #### IdentityServer4
 The project in the folder "gamecenter - identityServer4" is the exact same project but with IdentityServer4
 This version also has Facebook & Google authentication.
+
+#### Custom Authentication
+The project in the folder "gamecenter" is with custom authentication
 
 ## Seeded database
 Both of these projects has seeded data into the database.
