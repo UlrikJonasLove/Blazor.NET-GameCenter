@@ -1,9 +1,9 @@
 # GameCenter with Blazor
 
 ## Two Projects
-gamecenter
-<br />
 gamecenter - identityServer4
+<br />
+gamecenter
 
 #### IdentityServer4
 The project in the folder "gamecenter - identityServer4" is the exact same project but with IdentityServer4
