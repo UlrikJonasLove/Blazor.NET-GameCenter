@@ -1,0 +1,14 @@
+@page "/logout"
+@inject ILoginService loginService
+@inject NavigationManager navigationManager
+@using gamecenter.Client.Authentication.Interface
+
+<text>Login out...</text>
+
+@code{
+    protected async override Task OnInitializedAsync()
+    {
+        await loginService.Logout();
+        navigationManager.NavigateTo("");
+    }
+}

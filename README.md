@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GameCenter with Blazor
 
 ## Two Projects

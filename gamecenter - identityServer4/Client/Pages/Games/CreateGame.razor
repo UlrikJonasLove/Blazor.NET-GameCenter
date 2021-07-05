@@ -1,0 +1,36 @@
+@page "/game/create"
+@inject NavigationManager navigationManager
+@inject IGameRepository gameRepository
+@inject IGenreRepository genreRepository
+@attribute [Authorize]
+
+<h1>Create game</h1>
+
+@if (NotSelectedGenres != null)
+{
+    <GameForm Game="Game" OnValidSubmit="SaveGame" NotSelectedGenres="NotSelectedGenres" />
+}
+
+@code {
+    private Game Game = new Game();
+    private List<Genre> NotSelectedGenres;
+
+    protected async override Task OnInitializedAsync()
+    {
+        NotSelectedGenres = await genreRepository.GetGenres();
+    }
+
+    private async Task SaveGame()
+    {
+        try
+        {
+            var gameId = await gameRepository.CreateGame(Game);
+            navigationManager.NavigateTo($"game/{gameId}/{Game.Title.Replace(" ", "-")}");
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+
+}

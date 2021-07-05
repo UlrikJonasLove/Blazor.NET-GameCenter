@@ -1,0 +1,107 @@
+@inject IPersonRepository personRepository
+
+<EditForm Model="Game" OnValidSubmit="OnDataAnnotationsValidated">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Title:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Game.Title" />
+            <ValidationMessage For="@(() => Game.Title)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Newly Release</label>
+        <div>
+            <InputCheckbox @bind-Value="Game.NewlyReleases" />
+            <ValidationMessage For="@(() => Game.NewlyReleases)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Trailer:</label>
+        <div>
+            <InputText class="form-control" @bind-Value="@Game.Trailer" />
+            <ValidationMessage For="@(() => Game.Trailer)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Release Date:</label>
+        <div>
+            <InputDate class="form-control" @bind-Value="@Game.ReleaseDate" />
+            <ValidationMessage For="@(() => Game.ReleaseDate)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <InputImg Label="Picture" OnSelectedImage="OnSelectedPoster" ImageURL="@imageURL" />
+    </div>
+    <div class="form-group form-markdown">
+        <Input @bind-Value="Game.Summary" Label="Summary" For="@(() => Game.Summary)"/>
+    </div>
+    <div class="form-group">
+        <label>Genres:</label>
+        <div>
+            <GenreSelector Selected="Selected" NoSelected="NotSelected"></GenreSelector>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>People:</label>
+        <div>
+            <TypeaheadSelector Context="person" SearchMethod="SearchMethod" SelectedElements="SelectedPerson">
+                <MyResultTemplate>
+                    <img style="width: 50px;" src="@person.Picture" />
+                    @person.Name
+                </MyResultTemplate>
+                <MyListTemplate>
+                    @person.Name / <input type="text" placeholder="Role in Game" @bind="person.RoleInGame" />
+                </MyListTemplate>
+            </TypeaheadSelector>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="Submit">Save</button>
+</EditForm>
+
+@code {
+    [Parameter] public Game Game { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public List<Genre> SelectedGenre { get; set; } = new List<Genre>();
+    [Parameter] public List<Genre> NotSelectedGenres { get; set; } = new List<Genre>();
+    [Parameter] public List<Person> SelectedPerson { get; set; } = new List<Person>();
+
+    private List<GenreSelectorModel> Selected = new List<GenreSelectorModel>();
+    private List<GenreSelectorModel> NotSelected = new List<GenreSelectorModel>();
+    private string imageURL;
+
+    protected override void OnInitialized()
+    {
+        Selected = SelectedGenre.Select(x => new GenreSelectorModel(x.Id.ToString(), x.Name)).ToList();
+        NotSelected = NotSelectedGenres.Select(x => new GenreSelectorModel(x.Id.ToString(), x.Name)).ToList();
+        if(!string.IsNullOrEmpty(Game.Poster))
+        {
+            imageURL = Game.Poster;
+            Game.Poster = null;
+        }
+    }
+    private void OnSelectedPoster(string imageBase64)
+    {
+        Game.Poster = imageBase64;
+        imageURL = null;
+    }
+
+    private async Task<IEnumerable<Person>> SearchMethod(string searchText)
+    {
+        return await personRepository.GetPeopleByName(searchText);
+    }
+
+    private async Task OnDataAnnotationsValidated()
+    {
+        Game.GamesGenres = Selected
+            .Select(x => new GamesGenres { GenreId = int.Parse(x.Key) }).ToList();
+
+        Game.GamesPeople = SelectedPerson
+            .Select(x => new GamesPeople { PersonId = x.Id, RoleOfGame = x.RoleInGame}).ToList();
+
+        @if(!string.IsNullOrWhiteSpace(Game.Poster)) { imageURL = null; }
+
+        await OnValidSubmit.InvokeAsync(null);
+    }
+}

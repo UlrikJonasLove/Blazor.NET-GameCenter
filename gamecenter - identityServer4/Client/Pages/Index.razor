@@ -1,0 +1,25 @@
+﻿@page "/"
+@page "/index"
+@inject IGameRepository gameRepository
+
+<div>
+    <h3>Newly Releases</h3>
+    <GamesList Games="NewlyReleases" />
+</div>
+
+<div>
+    <h3>Upcoming Releases</h3>
+    <GamesList Games="UpcomingReleases" />
+</div>
+
+@code {
+    private List<Game> NewlyReleases;
+    private List<Game> UpcomingReleases;
+
+    protected async override Task OnInitializedAsync()
+    {
+        var response = await gameRepository.GetIndexPageDto();
+        NewlyReleases = response.NewlyReleases;
+        UpcomingReleases = response.UpcomingReleases;
+    }
+}

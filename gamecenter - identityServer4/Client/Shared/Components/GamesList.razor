@@ -1,0 +1,26 @@
+@inject IJSRuntime js
+@inject IGameRepository gameRepository
+
+<div class="games-container">
+<GenericList List="Games">
+    <ElementTemplate Context="game">
+        <IndividualGame Game="game"
+                DeleteGame="DeleteGame" @key="game.Id"/>
+    </ElementTemplate>
+</GenericList>
+</div>
+
+@code {
+    [Parameter] public List<Game> Games { get; set; }  
+
+    private async Task DeleteGame(Game game) 
+    {
+        var confirmed = await js.Confirm($"Are you sure you want to delete {game.Title}");
+        if(confirmed) 
+        {
+            await gameRepository.DeleteGame(game.Id);
+            Games.Remove(game);
+        }
+
+    }
+}

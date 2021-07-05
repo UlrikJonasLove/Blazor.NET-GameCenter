@@ -1,0 +1,29 @@
+<div class="individual-game-container">
+    <a href="@gameURL">
+        <img src="@Game.Poster" alt="Poster" class="game-poster" />
+    </a>
+    <p><a href="@gameURL">@Game.TitleBrief</a></p>
+    <div>
+        <AuthorizeView>
+            <Authorized>
+                <a href="/game/edit/@Game.Id" class="btn btn-info">Update</a>
+                <button type="button" class="btn btn-danger"
+                @onclick="@(() => DeleteGame.InvokeAsync(Game))">
+                Delete
+                </button>
+        </Authorized>
+    </AuthorizeView>
+      
+    </div>
+</div>  
+
+@code {
+    [Parameter] public Game Game { get; set; }
+    [Parameter] public EventCallback<Game> DeleteGame { get; set; }
+    private string gameURL = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        gameURL = $"/game/{Game.Id}/{Game.Title.Replace(" ", "-")}";
+    }
+}

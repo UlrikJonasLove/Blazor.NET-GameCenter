@@ -1,0 +1,79 @@
+@page "/game/{GameId:int}"
+@page "/game/{GameId:int}/{GameName}"
+@inject IGameRepository gameRepository
+@inject IRatingRepository ratingRepository
+@inject IDisplayMessage displayMessage
+
+@if (model == null)
+{
+    <text>Loading</text>
+}
+else
+{
+    <h2>@model.Game.Title (@model.Game.ReleaseDate.Value.ToString("yyyy"))</h2>
+    for (int i = 0; i < model.Genres.Count; i++)
+    {
+        if (i < model.Genres.Count - 1)
+        {
+            @linkGenre(model.Genres[i])<text>, </text>
+        }
+        else
+        {
+            @linkGenre(model.Genres[i])
+        }
+
+    }
+
+<text> | </text> <span>@model.Game.ReleaseDate.Value.ToString("dd MMM yyyy")</span>
+<text> | Average: </text> @model.AverageVote.ToString("0.#") <text>/5 | Your Vote: </text>
+<Rating MaximumRating="5" SelectedRating="model.UserVote" OnVote="OnVote" /> 
+
+<div style="display: flex">
+    <span style="display: inline-block; margin-right: 5px"><img src="@model.Game.Poster" style="width: 225px; height: 315px"></span>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/@model.Game.Trailer" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+</div>
+<div style="margin-top: 10px;">
+    <h3>Summary</h3>
+    <div>
+        <MarkdownInput MarkdownContent="@model.Game.Summary" />
+    </div>
+</div>
+<div style="margin-top: 10px;">
+    <h3>People in Game</h3>
+    <div style="display: flex; flex-direction: column">
+        @foreach(var person in model.PersonInGame)
+        {
+            <div style="margin-bottom: 6px;">
+                <img style="width: 50px;" src="@person.Picture" />
+                <span style="display:inline-block; width: 200px;"><a href="/person/@person.Id/@person.Name.Replace(" ", "-")">@person.Name</a></span>
+                <span style="display:inline-block; width: 45px;">...</span>
+                <span>@person.RoleInGame</span>
+            </div>
+        }
+    </div>
+</div>
+}
+@code{
+    [Parameter] public int GameId { get; set; }
+    [Parameter] public string GameName { get; set; }
+    private RenderFragment<Genre> linkGenre = (genre) =>@<a href="games/search?genreId=@genre.Id">@genre.Name</a>;
+    GameDetailDTO model;
+    protected async override Task OnInitializedAsync()
+    {
+        model = await gameRepository.GetGameDetailDTO(GameId);
+    }
+
+    private async Task OnVote(int selectedRate)
+    {
+        model.UserVote = selectedRate;
+        var gameRating = new GameRating() { Rate = selectedRate, GameId = GameId };
+        await ratingRepository.Vote(gameRating);
+        await displayMessage.DisplaySuccessMessage("Your vote has been recieved!");
+    } 
+}

@@ -1,0 +1,71 @@
+@page "/people"
+@inject IPersonRepository personRepository
+@attribute [Authorize]
+
+<h1>people</h1>
+
+<div class="form-group">
+        <a class="btn btn-info" href="person/create">New Person</a>
+</div>
+
+<Page CurrentPage="@pageDto.Page" AmountOfPages="amountOfPages" SelectedPage="SelectedPage"/>
+<GenericList List="Person">
+    <WholeListTemplate>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Person)
+                {
+                    <tr>
+                        <td>
+                            <a href="/person/edit/@item.Id" class="btn btn-success">Edit</a>
+                            <button @onclick="(() => DeletePerson(item.Id))" class="btn btn-danger">Delete</button>
+                        </td>
+                        <td>@item.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </WholeListTemplate>
+</GenericList>
+
+@code{
+    List<Person> Person;
+    PageDTO pageDto = new PageDTO();
+    private int amountOfPages;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await PersonList();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+    private async Task SelectedPage(int page)
+    {
+        pageDto.Page = page;
+        await PersonList();
+    }
+
+     private async Task PersonList()
+    {
+        var pageResponse = await personRepository.GetPeople(pageDto);
+        Person = pageResponse.Response;
+        amountOfPages = pageResponse.AmountOfPages;
+    }
+
+    private async Task DeletePerson(int Id)
+    {
+       await personRepository.DeletePerson(Id);
+       await PersonList();
+    }
+}

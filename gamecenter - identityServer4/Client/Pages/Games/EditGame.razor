@@ -1,0 +1,33 @@
+@page "/game/edit/{GameId:int}"
+@inject IGameRepository gameRepository
+@inject NavigationManager navigationManager
+@attribute [Authorize]
+
+<h1>edit game</h1>
+
+@if(Game != null)
+{
+    <GameForm Game="Game" OnValidSubmit="Edit" NotSelectedGenres="NotSelectedGenres" SelectedGenre="SelectedGenres" SelectedPerson="SelectedPeople"/>
+}
+
+@code {
+    [Parameter] public int GameId { get; set; }
+    private Game Game;
+    private List<Person> SelectedPeople;
+    private List<Genre> NotSelectedGenres;
+    private List<Genre> SelectedGenres;
+    protected async override Task OnInitializedAsync()
+    {
+        var model = await gameRepository.GetGamesForUpdate(GameId);
+        Game = model.Game;
+        SelectedPeople = model.People;
+        SelectedGenres = model.SelectedGenres;
+        NotSelectedGenres = model.NotSelectedGenres;
+    }
+
+    private async Task Edit() 
+    {
+        await gameRepository.UpdateGame(Game);
+        navigationManager.NavigateTo($"game/{GameId}/{Game.Title.Replace(" ", "-")}");
+    }
+}
