@@ -49,7 +49,19 @@ namespace gamecenter.Server
                 .AddProfileService<IdentityProfileService>();
 
             services.AddAuthentication()
-                .AddIdentityServerJwt();
+                .AddIdentityServerJwt()
+                .AddGoogle("google", opt =>
+                {
+                    var googleAuth = Configuration.GetSection("Authentication:Google");
+                    opt.ClientId = googleAuth["ClientId"];
+                    opt.ClientSecret = googleAuth["ClientSecret"];
+                    opt.SignInScheme = IdentityConstants.ExternalScheme;
+                })
+                .AddFacebook(fo => 
+                { 
+                    fo.AppId = Configuration["Authentication:Facebook:AppId"];
+                    fo.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                });
 
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IFileStorageService, FileStorageService>();
