@@ -7,9 +7,9 @@ namespace gamecenter.Client.Helpers.Interface
 {
     public static class IHttpServiceExtensionMethods
     {    
-        public static async Task<T> GetHelper<T>(this IHttpService httpService, string url)
+        public static async Task<T> GetHelper<T>(this IHttpService httpService, string url, bool includeToken = true)
         {
-            var response = await httpService.Get<T>(url);
+            var response = await httpService.Get<T>(url, includeToken);
             if(!response.Success)
             {
                 throw new ApplicationException(await response.GetBody());
@@ -17,7 +17,7 @@ namespace gamecenter.Client.Helpers.Interface
             return response.Response;
         }
 
-        public static async Task<PageResponse<T>> GetHelper<T>(this IHttpService httpService, string url, PageDTO pageDto)
+        public static async Task<PageResponse<T>> GetHelper<T>(this IHttpService httpService, string url, PageDTO pageDto, bool includeToken = true)
         {
             string newUrl = "";
             if(url.Contains("?"))
@@ -28,7 +28,7 @@ namespace gamecenter.Client.Helpers.Interface
             {
                 newUrl = $"{url}?page={pageDto.Page}&itemsPerPage={pageDto.ItemsPerPage}";
             }
-            var response = await httpService.Get<T>(newUrl);
+            var response = await httpService.Get<T>(newUrl, includeToken);
             var amountOfPages = int.Parse(response.HttpResponseMessage.Headers.GetValues("amountOfPages").FirstOrDefault());
             var pageResponse = new PageResponse<T>
             {

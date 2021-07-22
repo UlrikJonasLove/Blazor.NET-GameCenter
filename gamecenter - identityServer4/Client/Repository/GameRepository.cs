@@ -22,7 +22,7 @@ namespace gamecenter.Client.Repository
 
         public async Task<IndexPageDTO> GetIndexPageDto()
         {
-            var response = await httpService.Get<IndexPageDTO>(url);
+            var response = await httpService.Get<IndexPageDTO>(url, includeToken: false);
             if(!response.Success)
             {
                 throw new ApplicationException(await response.GetBody());
@@ -37,12 +37,12 @@ namespace gamecenter.Client.Repository
 
         public async Task<GameDetailDTO> GetGameDetailDTO(int id)
         {
-            return await httpService.GetHelper<GameDetailDTO>($"{url}/{id}");
+            return await httpService.GetHelper<GameDetailDTO>($"{url}/{id}", includeToken: false);
         }
 
         public async Task<PageResponse<List<Game>>> GetGamesByFilter(GameFilterDTO gameFilterDto)
         {
-            var responseHttp = await httpService.Post<GameFilterDTO, List<Game>>($"{url}/filter", gameFilterDto);
+            var responseHttp = await httpService.Post<GameFilterDTO, List<Game>>($"{url}/filter", gameFilterDto, includeToken: false);
             var amountOfPages = int.Parse(responseHttp.HttpResponseMessage.Headers.GetValues("amountOfPages").FirstOrDefault());
             var pageResponse = new PageResponse<List<Game>>()
             {

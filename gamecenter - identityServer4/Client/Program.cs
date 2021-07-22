@@ -12,8 +12,7 @@ using gamecenter.Client.Helpers.Interface;
 using gamecenter.Client.Repository.Interface;
 using gamecenter.Client.Repository;
 using Microsoft.AspNetCore.Components.Authorization;
-using gamecenter.Client.Authentication;
-using gamecenter.Client.Authentication.Interface;
+using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 
 namespace gamecenter.Client
 {
@@ -24,7 +23,13 @@ namespace gamecenter.Client
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-            builder.Services.AddSingleton(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddHttpClient<HttpClientWithToken>(
+                client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
+                .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
+
+            builder.Services.AddHttpClient<HttpClientWithoutToken>(
+                client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
+
             ConfigureServices(builder.Services);
             await builder.Build().RunAsync();
         }
@@ -39,13 +44,7 @@ namespace gamecenter.Client
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IDisplayMessage, DisplayMessage>();
-            services.AddAuthorizationCore();
-            services.AddScoped<JwtAuthStateProvider>();
-            services.AddScoped<AuthenticationStateProvider, JwtAuthStateProvider>(
-                provider => provider.GetRequiredService<JwtAuthStateProvider>());
-            services.AddScoped<ILoginService, JwtAuthStateProvider>(
-                provider => provider.GetRequiredService<JwtAuthStateProvider>());
-            services.AddScoped<TokenRenewer>();
+            services.AddApiAuthorization();
         }
     }
 }

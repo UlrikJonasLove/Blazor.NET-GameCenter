@@ -1,15 +1,19 @@
 using gamecenter.Shared.Models;
+using IdentityServer4.EntityFramework.Options;
+using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 
 namespace gamecenter.Server.Data
 {
-    public class AppDbContext : IdentityDbContext
+    public class AppDbContext : ApiAuthorizationDbContext<IdentityUser>
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) 
-        : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options, IOptions<OperationalStoreOptions> operationalStoreOptions) 
+        : base(options, operationalStoreOptions)
         {
 
         }

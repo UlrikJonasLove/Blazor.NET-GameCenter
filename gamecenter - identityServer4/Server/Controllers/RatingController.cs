@@ -13,7 +13,7 @@ namespace gamecenter.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class RatingController: ControllerBase
     {
         private readonly AppDbContext context;

@@ -18,7 +18,7 @@ namespace gamecenter.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(Roles = "Admin")]
     public class PeopleController : ControllerBase
     {
         private readonly AppDbContext context;

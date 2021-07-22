@@ -1,6 +1,5 @@
 @inherits LayoutComponentBase
 @inject IJSRuntime js
-@inject gamecenter.Client.Authentication.TokenRenewer tokenRenewer
 
 
 <div class="page @CssClass()">
@@ -10,18 +9,18 @@
 
     <div class="main">
         <div class="top-row px-4">
-            Theme
+                Theme
             <select @onchange="ChangingTheme" style="margin-left: 1rem;">
-                @foreach(var theme in themes)
-                {
-                    <option selected="@IsSelectedTheme(theme)" value="@theme">@theme</option>
-                }
-            </select>
-            <AuthLinks />
-            ||
-            <a href="about">
-                <span aria-hidden="true" class="ml-md-auto"></span> About
-            </a>
+                @foreach (var theme in themes)
+                 {
+                      <option selected="@IsSelectedTheme(theme)" value="@theme">@theme</option>
+                 }
+                </select>
+                <AuthLinks />
+                ||
+                <a href="about">
+                    <span aria-hidden="true" class="ml-md-auto"></span> About
+                </a>
         </div>
 
         <div class="content px-4" style="margin-bottom: 20px;">
@@ -39,7 +38,7 @@
     protected override async Task OnInitializedAsync()
     {
         await js.InitializeInactivityTimer(DotNetObjectReference.Create(this));
-        tokenRenewer.Initiate();
+        
         var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", keyTheme);
         if(!string.IsNullOrEmpty(themeFromLocalStorage))
         {

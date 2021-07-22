@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Identity;
 using System.Text;
 using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace gamecenter.Server
 {
@@ -22,6 +24,7 @@ namespace gamecenter.Server
     {
         public Startup(IConfiguration configuration)
         {
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             Configuration = configuration;
         }
 
@@ -33,21 +36,20 @@ namespace gamecenter.Server
         {
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                options.TokenValidationParameters = new TokenValidationParameters
+
+            services.AddDefaultIdentity<IdentityUser>(options =>
                 {
-                    ValidateIssuer = false,
-                    ValidateAudience = false,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(Configuration["jwt:key"])),
-                    ClockSkew = TimeSpan.Zero
-                });
+                    options.SignIn.RequireConfirmedAccount = false;
+                })
+                    .AddRoles<IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>();
+
+            services.AddIdentityServer()
+                .AddApiAuthorization<IdentityUser, AppDbContext>()
+                .AddProfileService<IdentityProfileService>();
+
+            services.AddAuthentication()
+                .AddIdentityServerJwt();
 
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped<IFileStorageService, FileStorageService>();
@@ -80,6 +82,7 @@ namespace gamecenter.Server
 
             app.UseRouting();
             app.UseAuthentication();
+            app.UseIdentityServer();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
